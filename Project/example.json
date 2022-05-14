@@ -1,0 +1,99 @@
+[
+{
+    "name": "Java ",
+    "img": "https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png",
+    "desc": "Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere. Java applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of the underlying computer architecture. The syntax of Java is similar to C and C++, but has fewer low-level facilities than either of them. The Java runtime provides dynamic capabilities (such as reflection and runtime code modification) that are typically not available in traditional compiled languages. As of 2019, Java was one of the most popular programming languages in use according to GitHub, particularly for client-server web applications,with a reported 9 million developers.",
+    "usedFor" :[ "Web-based Applications", "Embedded Systems", "Big Data Technologies",
+        "Distributed Applications", "Cloud-based Applications", "Web servers and Application servers", "Software Tools", "Gaming Applications"],
+    "tutorial_ar": "https://youtube.com/playlist?list=PL1DUmTEdeA6K7rdxKiWJq6JIxTvHalY8f",
+    "tutorial_en": "https://youtube.com/playlist?list=PLU8oAlHdN5BktAXdEVCLUYzvDyqRQJ2lk"
+    
+    
+    
+},
+{
+    "name": "C",
+    "img": "https://i.pinimg.com/originals/6e/46/e7/6e46e7dbe2bb73dacc055e5dbd85c3ad.png",
+    "desc": "C is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system. By design, C provides constructs that map efficiently to typical machine instructions. It has found lasting use in applications previously coded in assembly language. Such applications include operating systems and various application software for computer architectures that range from supercomputers to PLCs and embedded systems.",
+    "usedFor": ["Games", "Graphics", "Applications requiring calculations"],
+        "tutorial_ar": "https://youtube.com/playlist?list=PLkIliLHi5M4Lsm8PkPQSdbs505YJDQ0pG",
+          "tutorial_en": "https://youtube.com/playlist?list=PLVlQHNRLflP8IGz6OXwlV_lgHgc72aXlh"
+        },
+        {
+            "name": "Python ",
+            "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1024px-Python-logo-notext.svg.png",
+            "desc": "Python is an interpreted high-level general-purpose programming language. Its design philosophy emphasizes code readability with its use of significant indentation. Its language constructs as well as its object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects. Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly, procedural), object-oriented and functional programming. It is often described as a batteries included language due to its comprehensive standard library .",
+            "usedFor": ["Software testing and prototyping", "Web development", "AI Machine learning Operating systems Mobile Application Development Video Games"],
+            "tutorial_ar": "https://youtube.com/playlist?list=PLuXY3ddo_8nzrO74UeZQVZOb5-wIS6krJ",
+            "tutorial_en": "https://youtube.com/playlist?list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3"
+        }  ,
+        {
+            "name": "C++",
+            "img": "https://w7.pngwing.com/pngs/46/626/png-transparent-c-logo-the-c-programming-language-computer-icons-computer-programming-source-code-programming-miscellaneous-template-blue.png",
+            "desc": "C++ is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language,or C with Classes. The language has expanded significantly over time, and modern C++ now has object-oriented, generic, and functional features in addition to facilities for low-level memory manipulation. It is almost always implemented as a compiled language, and many vendors provide C++ compilers, including the Free Software Foundation, LLVM, Microsoft, Intel, Oracle, and IBM, so it is available on many platforms .",
+            "usedFor": ["Game development", "IoT devices", "Web browsers", "Machine learning tools"],
+            "tutorial_ar": "https://youtube.com/playlist?list=PL1DUmTEdeA6IUD9Gt5rZlQfbZyAWXd-oD",
+            "tutorial_en": "https://youtube.com/playlist?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ "
+        },
+       
+        {
+            "name": "Javascript",
+            "img": "https://www.mayurpatil.com/wp-content/uploads/2021/04/js.jpg",
+            "desc": "JavaScript is one of the core technologies of the World Wide Web. Over 97% of websites use it client-side for web page behavior.Most web browsers have a dedicated JavaScript engine to execute the code on the user's device.",
+            "usedFor": ["Adding interactive behavior to web pages", "Creating web and mobile apps", "Building web servers and developing server applications Game development"],
+            "tutorial_ar": "https://www.youtube.com/watch?v=eKuNnpWhm7c&list=PLDoPjvoNmBAw6p0z0Ek0OjPzeXoqlFlCh",
+            "tutorial_en": "https://www.youtube.com/watch?v=zBPeGR48_vE&list=PLqkLaKB2GJhWXV9rcarwvn06ISlL_9mPQ"
+        },
+        {
+            "name": "C#",
+            "img": "https://miro.medium.com/max/1200/1*w0u2TZpEp3WfKMrlL5jTSw.png",
+            "desc": "C# is a general-purpose, modern and object-oriented programming language pronounced as “C sharp”. It was developed by Microsoft led by Anders Hejlsberg and his team within the .Net initiative and was approved by the European Computer Manufacturers Association (ECMA) and International Standards Organization (ISO). C# is among the languages for Common Language Infrastructure and the current version of C# is version 7.2. C# is a lot similar to Java syntactically and is easy for the users.",
+            "usedFor": ["Web Application Development", "Windows Applications"," Games"],
+            "tutorial_ar": "https://www.youtube.com/watch?v=mD7_YRL-0Gk&list=PLHIfW1KZRIfkDF2xTIB5kX8gdthmLTufx",
+            "tutorial_en": "https://www.youtube.com/watch?v=qOruiBrXlAw&list=PL_c9BZzLwBRIXCJGLd4UzqH34uCclOFwC"
+        },
+        
+        {
+            "name": "SQl",
+            "img": "https://thumbs.dreamstime.com/b/sql-database-icon-logo-design-ui-ux-app-blue-inscription-shadow-96842106.jpg",
+            "desc": "SQL : stands for Structured Query Language. SQL is used to communicate with a database. According to ANSI (American National Standards Institute), it is the standard language for relational database management systems. SQL statements are used to perform tasks such as update data on a database, or retrieve data from a database. Some common relational database management systems that use SQL are: Oracle, Sybase, Microsoft SQL Server, Access, Ingres, etc. Although most database systems use SQL, most of them also have their own additional proprietary extensions that are usually only used on their system. However, the standard SQL commands such as Select, Insert, Update, Delete, Create, and Drop can be used to accomplish almost everything that one needs to do with a database.",
+            "usedFor": ["SQL can execute queries against a database", "SQL can retrieve data from a database", "SQL can insert , update and delete records in a database"," SQL can create new databases", "SQL can create new tables in a database"],
+            "tutorial_ar": "https://www.youtube.com/watch?v=8H2G3VTXrO8&list=PLd6o9p13Lc50MNeph8RQaBILOHr8GMIkB",
+            "tutorial_en": "https://www.youtube.com/watch?v=HXV3zeQKqGY&t=8s"
+        },
+        {
+            "name": "Objective-C",
+            "img": "https://i.pinimg.com/originals/4c/0b/8b/4c0b8bb6b52f4b1b2537064805f1f009.gif",
+            "desc": "Objective-C is a general-purpose, object-oriented programming language that adds Smalltalk-style messaging to the C programming language.Objective-C was the standard programming language supported by Apple for developing macOS (which descended from NeXTSTEP[3]) and iOS applications using their respective application programming interfaces (APIs), Cocoa and Cocoa Touch, until the introduction of Swift in 2014.",
+            "usedFor": "Mobile Applicition Development",
+            "tutorial_ar": "https://www.youtube.com/watch?v=Do9FwLLyupA&list=PLF8OvnCBlEY1LvgUqPxPGUrpGUl0jD09-",
+            "tutorial_en": "https://www.youtube.com/watch?v=3wbLa0HonCA&list=PLMRqhzcHGw1YfS92iytSJCjt01FxPF9rr"
+        },
+        
+        {
+            "name": "Flutter",
+            "img": "https://ih1.redbubble.net/image.1057190214.1918/flat,750x1000,075,f.u1.jpg",
+            "desc": "Flutter is an open-source UI software development kit created by Google. It is used to develop cross platform applications for Android, iOS, Linux, Mac, Windows, Google Fuchsia, and the web from a single codebase.",
+            "usedFor": "It is used to develop cross platform applications for Android, iOS, Linux, Mac, Windows, Google Fuchsia, and the web from a single codebase.",
+            "tutorial_ar": "https://www.youtube.com/playlist?list=PL93xoMrxRJIsoHL8gG1UBfVoXKi7OxbLU",
+            "tutorial_en": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ"
+        },
+        
+        {
+            "name": "Assembly Language ",
+            "img": "https://image.shutterstock.com/image-illustration/assembly-code-on-dark-background-260nw-1895030743.jpg",
+            "desc": "An assembly language is a type of low-level programming language that is intended to communicate directly with a computer's hardware. Unlike machine language, which consists of binary and hexadecimal characters, assembly languages are designed to be readable by humans",
+            "usedFor":[ "Today, assembly language is used primarily for direct hardware manipulation", "access to specialized processor instructions", "or to address critical performance issues"],
+            "tutorial_ar": "https://www.youtube.com/watch?v=VXyjgzbxH0Q&list=PLMm8EjqH1EFVodghdDWaAuHkHqj-nJ0bN",
+            "tutorial_en": "https://www.youtube.com/watch?v=vtWKlgEi9js&list=PLPedo-T7QiNsIji329HyTzbKBuCAHwNFC"
+        },
+        {
+            "name": "Swift",
+            "img": "https://miro.medium.com/max/1400/1*6-G_o5PZSzppyfdLTbFu-A.png",
+            "desc": "Swift is a general-purpose programming language built using a modern approach to safety, performance, and software design patterns. The goal of the Swift project is to create the best available language for uses ranging from systems programming, to mobile and desktop apps, scaling up to cloud services",
+            "usedFor": ["Swift is a programming language used to develop applications for Apple devices like the iPhone and Apple Watch", "It is a modern replacement for C-based languages which were previously used for Apple development", "Many of the applications you see on the Apple App "],
+            "tutorial_ar": "https://www.youtube.com/watch?v=TD-aS6S_tHI&list=PLQaOY10EEc8bNbEBMyiJU1I-GIgs1LQfj",
+            "tutorial_en": "https://www.youtube.com/watch?v=bjPENR6sHRU&list=PL5PR3UyfTWvfacnfUsvNcxIiKIgidNRoW"
+        }
+    ]
+
