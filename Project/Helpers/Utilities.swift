@@ -27,14 +27,14 @@ class Utilities {
         textfield.layer.addSublayer(bottomLine)
         
     }
-    static func styleMyHomeButton(_button:UIButton){
+    static func styleMyHomeButton(button: UIButton){
            button.frame = CGRect(x: 160, y: 100, width: 50, height: 50)
            button.layer.cornerRadius = 0.5 * button.bounds.size.width
            button.clipsToBounds = true
            button.setImage(UIImage(named:"thumbsUp.png"), for: .normal)
            //button.addTarget(self, action: #selector(thumbsUpButtonPressed), for: .touchUpInside)
-           view.addSubview(button)
-           
+//        view.addSubview(button)
+
            
        }
     static func styleFilledButton(_ button:UIButton) {
@@ -43,6 +43,10 @@ class Utilities {
         button.backgroundColor = UIColor.init(red: 48/255, green: 173/255, blue: 99/255, alpha: 1)
         button.layer.cornerRadius = 25.0
         button.tintColor = UIColor.white
+    }
+    static func styleCircleButton(_ button:UIButton){
+        button.layer.cornerRadius = 0.5 * button.bounds.size.width
+        button.clipsToBounds = true
     }
     
     static func styleHollowButton(_ button:UIButton) {

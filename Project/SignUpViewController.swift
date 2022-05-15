@@ -63,58 +63,59 @@ class SignUpViewController: UIViewController {
     }
 
     @IBAction func signUpTapped(_ sender: Any) {
-        //validate the fields
-        let error = validatefield()
-              if error != nil {
-                  // there's something wrong with field , show error message
-                showError(error!)
-              }
-              else {
-                // create clean virsion of the data
-                let firstName = firstNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-                let lastName = lastNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-                let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-                let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-                
-                
-                //Create the user
-                Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
-                    // check for error
-                    if err != nil {
-                        
-                        //There was an error creating the user
-                        self.showError("Error creating user")
-                    }
-                    else{
-                        //User was created successfuly, now store the first name and last name
-                        let db =  Firestore.firestore()
-                        db.collection("users").addDocument(data: ["firstname" :firstName ,"lastname" : lastName,"uid":result!.user.uid]) { (error) in
-                            if error != nil{
-                                //show error message
-                                self.showError("Error Saving User Data")
-                            }
+               //validate the fields
+            let error = validatefield()
+                  if error != nil {
+                      // there's something wrong with field , show error message
+                    showError(error!)
+                  }
+                  else {
+                    // create clean virsion of the data
+                    let firstName = firstNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+                    let lastName = lastNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+                    let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+                    let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+                    //Create the user
+                    Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
+                        // check for error
+                        if err != nil {
+                            //There was an error creating the user
+                            self.showError("Error creating user")
                         }
-                                        // transation to the home screen
-                        self.transitionToHome()
+                        else{
+                            //User was created successfuly, now store the first name and last name
+                            let db =  Firestore.firestore()
+                            db.collection("users").addDocument(data: ["firstname" :firstName ,"lastname" : lastName,"uid":result!.user.uid]) { (error) in
+                                if error != nil{
+                                    //show error message
+                                    self.showError("Error Saving User Data")
+                                }
+                            }
+                                            // transation to the home screen
+//                                self.transitionToHome()
+                        }
                     }
-                }
-                
+                    
+            }
+            // push
+            let name = self.firstNameTextField.text
+//            let storyboard = UIStoryboard(name: "main", bundle: nil)
+        if let viewcontroller = storyboard?.instantiateViewController(identifier: "MyHomeViewController") as? MyHomeViewController{
+                viewcontroller.name = name ?? ""
+                self.navigationController?.pushViewController(viewcontroller, animated: true)
+            }
 
-                
         }
-
-      
-        
-    }
+    
    func showError(_ message:String){
         errorLabel.text = message
         errorLabel.alpha = 1
     }
-    func  transitionToHome(){
-        let homeViewController =
-        storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
-        
-        view.window?.rootViewController = homeViewController
-        view.window?.makeKeyAndVisible()
-    }
+//func  transitionToHome(){
+//    let homeViewController =
+//    storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
+//
+//    view.window?.rootViewController = homeViewController
+//    view.window?.makeKeyAndVisible()
+//}
 }
