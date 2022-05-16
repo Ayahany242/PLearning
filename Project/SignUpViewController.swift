@@ -42,7 +42,14 @@ class SignUpViewController: UIViewController {
         Utilities.styleFilledButton(signUpButton)
 
     }
-//check the field and validate that the data is correct. if everything is correct , this method return nill. otherwise it returns the erroe message as a sstring
+    @IBAction func haveAccbutton(_ sender: Any) {
+    guard let vc = storyboard?.instantiateViewController(identifier: "LoginViewController") as? LoginViewController
+            else{
+        return
+        }
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    //check the field and validate that the data is correct. if everything is correct , this method return nill. otherwise it returns the erroe message as a sstring
     func validatefield() -> String?{
         
         //check  that all field are filled in

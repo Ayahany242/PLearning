@@ -8,7 +8,7 @@
 
 import FirebaseAuth
 import UIKit
-import GoogleSignIn
+//import GoogleSignIn
 
 
 class LoginViewController: UIViewController {
@@ -28,10 +28,10 @@ class LoginViewController: UIViewController {
         
         
         //add google signin button
-        
-        let googleButton = GIDSignInButton()
-        googleButton.frame = CGRect(x: 16, y: 116 + 80, width: view.frame.width - 32, height: 50)
-        view.addSubview(googleButton)
+//
+//        let googleButton = GIDSignInButton()
+//        googleButton.frame = CGRect(x: 16, y: 116 + 80, width: view.frame.width - 32, height: 50)
+//        view.addSubview(googleButton)
     }
 
   func setUpElements(){
@@ -40,7 +40,7 @@ class LoginViewController: UIViewController {
     
     Utilities.styleTextField(emailTextField)
     Utilities.styleTextField(passwordTextField)
-    Utilities.styleFilledButton(logInButton)
+//    Utilities.styleFilledButton(logInButton)
         
     }
 

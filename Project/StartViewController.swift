@@ -19,6 +19,7 @@ class StartViewController: UIViewController {
     @IBOutlet weak var logInButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.isHidden = true
        
     }
 
