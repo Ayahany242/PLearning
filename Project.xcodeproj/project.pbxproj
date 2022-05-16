@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03084BF32830FF4D00AC6EC8 /* EditNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03084BEF2830FF4700AC6EC8 /* EditNoteViewController.swift */; };
+		03084BF42830FF4D00AC6EC8 /* ListNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03084BF12830FF4D00AC6EC8 /* ListNotesViewController.swift */; };
+		03084BF52830FF4D00AC6EC8 /* ListNoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03084BF22830FF4D00AC6EC8 /* ListNoteTableViewCell.swift */; };
+		03084BFA2830FFCA00AC6EC8 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03084BF82830FFC400AC6EC8 /* Date+Extension.swift */; };
+		03084BFB2830FFCA00AC6EC8 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03084BF92830FFCA00AC6EC8 /* Note.swift */; };
+		03084BFE2831003400AC6EC8 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03084BFD2831003400AC6EC8 /* StartViewController.swift */; };
 		030F888D27DEBB17004A0BE5 /* example.json in Resources */ = {isa = PBXBuildFile; fileRef = 030F888C27DEBB17004A0BE5 /* example.json */; };
 		03603FFF28300D14006DE387 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03603FFD28300D13006DE387 /* Constants.swift */; };
 		0360400028300D14006DE387 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03603FFE28300D13006DE387 /* Utilities.swift */; };
@@ -36,6 +42,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03084BEF2830FF4700AC6EC8 /* EditNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditNoteViewController.swift; sourceTree = "<group>"; };
+		03084BF12830FF4D00AC6EC8 /* ListNotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListNotesViewController.swift; sourceTree = "<group>"; };
+		03084BF22830FF4D00AC6EC8 /* ListNoteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListNoteTableViewCell.swift; sourceTree = "<group>"; };
+		03084BF82830FFC400AC6EC8 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		03084BF92830FFCA00AC6EC8 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		03084BFD2831003400AC6EC8 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		030F888C27DEBB17004A0BE5 /* example.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = example.json; sourceTree = "<group>"; };
 		03603FFD28300D13006DE387 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		03603FFE28300D13006DE387 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
@@ -86,6 +98,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03084BED2830FE7A00AC6EC8 /* Note */ = {
+			isa = PBXGroup;
+			children = (
+				03084BF72830FF6B00AC6EC8 /* Extensions */,
+				03084BF62830FF5B00AC6EC8 /* Models */,
+				03084BEE2830FF4700AC6EC8 /* EditNote */,
+				03084BF02830FF4D00AC6EC8 /* ListNotes */,
+			);
+			name = Note;
+			sourceTree = "<group>";
+		};
+		03084BEE2830FF4700AC6EC8 /* EditNote */ = {
+			isa = PBXGroup;
+			children = (
+				03084BEF2830FF4700AC6EC8 /* EditNoteViewController.swift */,
+			);
+			path = EditNote;
+			sourceTree = "<group>";
+		};
+		03084BF02830FF4D00AC6EC8 /* ListNotes */ = {
+			isa = PBXGroup;
+			children = (
+				03084BF12830FF4D00AC6EC8 /* ListNotesViewController.swift */,
+				03084BF22830FF4D00AC6EC8 /* ListNoteTableViewCell.swift */,
+			);
+			path = ListNotes;
+			sourceTree = "<group>";
+		};
+		03084BF62830FF5B00AC6EC8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				03084BF92830FFCA00AC6EC8 /* Note.swift */,
+			);
+			name = Models;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		03084BF72830FF6B00AC6EC8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				03084BF82830FFC400AC6EC8 /* Date+Extension.swift */,
+			);
+			name = Extensions;
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		03084BFC2830FFE800AC6EC8 /* StartViewController */ = {
+			isa = PBXGroup;
+			children = (
+				03084BFD2831003400AC6EC8 /* StartViewController.swift */,
+				B73B41A327B16DC70024D57B /* SignUpViewController.swift */,
+				B73B41A527B16DE90024D57B /* LoginViewController.swift */,
+			);
+			name = StartViewController;
+			sourceTree = "<group>";
+		};
 		03603FFC28300D13006DE387 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,8 +230,8 @@
 		B73B41A927B16E220024D57B /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B73B41A327B16DC70024D57B /* SignUpViewController.swift */,
-				B73B41A527B16DE90024D57B /* LoginViewController.swift */,
+				03084BFC2830FFE800AC6EC8 /* StartViewController */,
+				03084BED2830FE7A00AC6EC8 /* Note */,
 				B745D72527DBF9CA002CF112 /* MyHomeViewController.swift */,
 				B73B41A727B16E060024D57B /* HomeViewController.swift */,
 				B74E582027D2AB6100E39622 /* DescriptionViewController.swift */,
@@ -311,6 +379,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03084BF32830FF4D00AC6EC8 /* EditNoteViewController.swift in Sources */,
+				03084BFA2830FFCA00AC6EC8 /* Date+Extension.swift in Sources */,
+				03084BFB2830FFCA00AC6EC8 /* Note.swift in Sources */,
 				B7CB32BB27C6ABC300E81065 /* CustomTableViewCell.swift in Sources */,
 				03603FFF28300D14006DE387 /* Constants.swift in Sources */,
 				B735DAF9272F2AD600D3C4F4 /* ViewController.swift in Sources */,
@@ -325,10 +396,13 @@
 				B7804F75282821AD00B961D6 /* ExampleTableViewCell.swift in Sources */,
 				B74E582127D2AB6100E39622 /* DescriptionViewController.swift in Sources */,
 				B7D4EB26282D86A800648852 /* LanguageCollectionViewCell.swift in Sources */,
+				03084BFE2831003400AC6EC8 /* StartViewController.swift in Sources */,
 				B73B41A827B16E060024D57B /* HomeViewController.swift in Sources */,
+				03084BF42830FF4D00AC6EC8 /* ListNotesViewController.swift in Sources */,
 				B745D72627DBF9CA002CF112 /* MyHomeViewController.swift in Sources */,
 				0360400028300D14006DE387 /* Utilities.swift in Sources */,
 				B7804F782828296600B961D6 /* ExampleViewController.swift in Sources */,
+				03084BF52830FF4D00AC6EC8 /* ListNoteTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

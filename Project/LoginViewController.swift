@@ -45,31 +45,37 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func logInTapped(_ sender: Any) {
-    // validate the text field
-        // sign in in the user
-        // TODO: Validate Text Fields
-        
-        // Create cleaned versions of the text field
-        let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        
-        // Signing in the user
-        Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+        // validate the text field
+            // sign in in the user
+            // TODO: Validate Text Fields
             
-            if error != nil {
-                // Couldn't sign in
-                self.errorLabel.text = error!.localizedDescription
-                self.errorLabel.alpha = 1
-            }
-            else {
+            // Create cleaned versions of the text field
+            let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            
+            // Signing in the user
+            Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
                 
-                let homeViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
-                
-                self.view.window?.rootViewController = homeViewController
-                self.view.window?.makeKeyAndVisible()
+                if error != nil {
+                    // Couldn't sign in
+                    self.errorLabel.text = error!.localizedDescription
+                    self.errorLabel.alpha = 1
+                }
+                else {
+                    
+                    let homeViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
+                    
+                    self.view.window?.rootViewController = homeViewController
+                    self.view.window?.makeKeyAndVisible()
+                }
             }
+            let name = self.emailTextField.text
+//            let storyboard = UIStoryboard(name: "main", bundle: nil)
+        if let viewcontroller = storyboard?.instantiateViewController(identifier: "MyHomeViewController") as? MyHomeViewController{
+                viewcontroller.name = name ?? ""
+                self.navigationController?.pushViewController(viewcontroller, animated: true)
+            }
+        
         }
-    
-    }
     
 }

@@ -12,16 +12,18 @@ import SideMenu
 class MyHomeViewController: UIViewController {
     var menu :SideMenuNavigationController?
 
-    @IBOutlet weak var myDescription: UILabel!
-    @IBOutlet weak var Watch: UIButton!
-    
-    @IBOutlet weak var Quiz: UIButton!
-    
-    @IBOutlet weak var Chat: UIButton!
-    
-    @IBOutlet weak var Note: UIButton!
+     @IBOutlet weak var userName: UILabel!
+       @IBOutlet weak var watch: UIButton!
+       
+       @IBOutlet weak var examples: UIButton!
+       
+       
+       @IBOutlet weak var note: UIButton!
+       var name = ""
+       
     override func viewDidLoad() {
         super.viewDidLoad()
+ self.userName.text = self.name
 
   setUpElements()
         menu = SideMenuNavigationController(rootViewController: MenuListController())
@@ -35,13 +37,30 @@ class MyHomeViewController: UIViewController {
 
     
     func setUpElements(){
-        Utilities.styleCircleButton(Watch)
-        Utilities.styleCircleButton(Quiz)
-        Utilities.styleCircleButton(Note)
-        Utilities.styleCircleButton(Chat)
-        
+        Utilities.styleCircleButton(watch)
+        Utilities.styleCircleButton(examples)
+        Utilities.styleCircleButton(note)
+
         
     }
+    
+    @IBAction func watchdidTap(_ sender: Any) {
+        guard let vc = storyboard?.instantiateViewController(identifier: "YoutubeViewController") as? YoutubeViewController
+            else{
+        return
+        }
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    @IBAction func exampledidTap(_ sender: Any) {
+    }
+    @IBAction func notedidTap(_ sender: Any) {
+            guard let vc = storyboard?.instantiateViewController(identifier: "ListNotesViewController") as? ListNotesViewController
+                else{
+            return
+            }
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    
     @IBAction func didTapMenu(){
         present(menu!,animated: true)
     }
@@ -77,4 +96,5 @@ class MenuListController: UITableViewController{
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
+
 }
