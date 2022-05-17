@@ -20,13 +20,14 @@
 		B735DAF7272F2AD600D3C4F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B735DAF6272F2AD600D3C4F4 /* SceneDelegate.swift */; };
 		B735DAF9272F2AD600D3C4F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B735DAF8272F2AD600D3C4F4 /* ViewController.swift */; };
 		B735DAFC272F2AD600D3C4F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B735DAFA272F2AD600D3C4F4 /* Main.storyboard */; };
-		B735DAFE272F2AD800D3C4F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B735DAFD272F2AD800D3C4F4 /* Assets.xcassets */; };
 		B735DB01272F2AD800D3C4F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B735DAFF272F2AD800D3C4F4 /* LaunchScreen.storyboard */; };
 		B73B41A427B16DC70024D57B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73B41A327B16DC70024D57B /* SignUpViewController.swift */; };
 		B73B41A627B16DE90024D57B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73B41A527B16DE90024D57B /* LoginViewController.swift */; };
 		B73B41A827B16E060024D57B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73B41A727B16E060024D57B /* HomeViewController.swift */; };
 		B73B41B027B1BFD50024D57B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B73B41AF27B1BFD50024D57B /* GoogleService-Info.plist */; };
 		B745D72627DBF9CA002CF112 /* MyHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B745D72527DBF9CA002CF112 /* MyHomeViewController.swift */; };
+		B749F0BC2834414900780C68 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B749F0BB2834414900780C68 /* ProfileViewController.swift */; };
+		B749F0BE28344CB200780C68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B749F0BD28344CB000780C68 /* Assets.xcassets */; };
 		B74E582127D2AB6100E39622 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E582027D2AB6100E39622 /* DescriptionViewController.swift */; };
 		B760992127C9913700612B0D /* YoutubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B760992027C9913700612B0D /* YoutubeViewController.swift */; };
 		B7804F75282821AD00B961D6 /* ExampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7804F73282821AD00B961D6 /* ExampleTableViewCell.swift */; };
@@ -65,7 +66,6 @@
 		B735DAF6272F2AD600D3C4F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B735DAF8272F2AD600D3C4F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B735DAFB272F2AD600D3C4F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B735DAFD272F2AD800D3C4F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B735DB00272F2AD800D3C4F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B735DB02272F2AD800D3C4F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B73B41A327B16DC70024D57B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +73,8 @@
 		B73B41A727B16E060024D57B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B73B41AF27B1BFD50024D57B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B745D72527DBF9CA002CF112 /* MyHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHomeViewController.swift; sourceTree = "<group>"; };
+		B749F0BB2834414900780C68 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B749F0BD28344CB000780C68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B74E582027D2AB6100E39622 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 		B760992027C9913700612B0D /* YoutubeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeViewController.swift; sourceTree = "<group>"; };
 		B7804F73282821AD00B961D6 /* ExampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTableViewCell.swift; sourceTree = "<group>"; };
@@ -215,9 +217,9 @@
 				B735DAF6272F2AD600D3C4F4 /* SceneDelegate.swift */,
 				B735DAF8272F2AD600D3C4F4 /* ViewController.swift */,
 				B735DAFA272F2AD600D3C4F4 /* Main.storyboard */,
-				B735DAFD272F2AD800D3C4F4 /* Assets.xcassets */,
 				B735DAFF272F2AD800D3C4F4 /* LaunchScreen.storyboard */,
 				B735DB02272F2AD800D3C4F4 /* Info.plist */,
+				B749F0BD28344CB000780C68 /* Assets.xcassets */,
 				B73B41AF27B1BFD50024D57B /* GoogleService-Info.plist */,
 				030F888C27DEBB17004A0BE5 /* example.json */,
 				B7D4EB25282D86A800648852 /* LanguageCollectionViewCell.swift */,
@@ -237,6 +239,7 @@
 				B74E582027D2AB6100E39622 /* DescriptionViewController.swift */,
 				B7AE1DBF28118C4100C6B3A0 /* VedioViewController.swift */,
 				B760992027C9913700612B0D /* YoutubeViewController.swift */,
+				B749F0BB2834414900780C68 /* ProfileViewController.swift */,
 				B7804F772828296600B961D6 /* ExampleViewController.swift */,
 			);
 			name = "View Controllers";
@@ -322,9 +325,9 @@
 			files = (
 				B735DB01272F2AD800D3C4F4 /* LaunchScreen.storyboard in Resources */,
 				B7CB32BC27C6ABC300E81065 /* CustomTableViewCell.xib in Resources */,
+				B749F0BE28344CB200780C68 /* Assets.xcassets in Resources */,
 				030F888D27DEBB17004A0BE5 /* example.json in Resources */,
 				B73B41B027B1BFD50024D57B /* GoogleService-Info.plist in Resources */,
-				B735DAFE272F2AD800D3C4F4 /* Assets.xcassets in Resources */,
 				B7804F76282821AD00B961D6 /* ExampleTableViewCell.xib in Resources */,
 				B735DAFC272F2AD600D3C4F4 /* Main.storyboard in Resources */,
 			);
@@ -401,6 +404,7 @@
 				03084BF42830FF4D00AC6EC8 /* ListNotesViewController.swift in Sources */,
 				B745D72627DBF9CA002CF112 /* MyHomeViewController.swift in Sources */,
 				0360400028300D14006DE387 /* Utilities.swift in Sources */,
+				B749F0BC2834414900780C68 /* ProfileViewController.swift in Sources */,
 				B7804F782828296600B961D6 /* ExampleViewController.swift in Sources */,
 				03084BF52830FF4D00AC6EC8 /* ListNoteTableViewCell.swift in Sources */,
 			);

@@ -10,6 +10,7 @@ target 'Project' do
   pod 'Firebase/Auth'
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
+  pod 'Firebase/Database'
   pod 'GoogleSignIn'
   pod 'youtube-ios-player-helper'
   pod 'FBSDKLoginKit'

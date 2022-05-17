@@ -76,6 +76,8 @@ class MyHomeViewController: UIViewController {
 
 }
 class MenuListController: UITableViewController{
+    @IBOutlet var modeSwitch : UISwitch!
+    
     var items = ["First","Second","asss","aaa"]
     let darkColor = UIColor(red: 33/255.0, green: 33/255.0, blue: 33/255.0, alpha: 1)
     override func viewDidLoad() {
@@ -95,6 +97,9 @@ class MenuListController: UITableViewController{
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+    @IBAction func valueChanged (_ sender: Any){
+        
     }
 
 }
