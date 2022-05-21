@@ -6,7 +6,7 @@
 //  Copyright © 2019 Christopher Ching. All rights reserved.
 //
 
-import Foundation
+import FirebaseDatabase
 
 struct Constants {
     
@@ -15,6 +15,7 @@ struct Constants {
         static let homeViewController = "HomeVC"
         
     }
-    
+//    var ref =
+    static let languageRef = Database.database().reference().child("languages")
     
 }

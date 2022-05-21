@@ -7,73 +7,71 @@
 //
 
 import UIKit
-import SideMenu
+//import SideMenu
 
 class MyHomeViewController: UIViewController {
-    var menu :SideMenuNavigationController?
-
-     @IBOutlet weak var userName: UILabel!
-       @IBOutlet weak var watch: UIButton!
-       
-       @IBOutlet weak var examples: UIButton!
-       
-       
-       @IBOutlet weak var note: UIButton!
-       var name = ""
-       
+    //    var menu :SideMenuNavigationController?
+    
+    @IBOutlet weak var userName: UILabel!
+    @IBOutlet weak var watch: UIButton!
+    
+    @IBOutlet weak var examples: UIButton!
+    
+    
+    @IBOutlet weak var note: UIButton!
+    var name = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
- self.userName.text = self.name
-
-  setUpElements()
-        menu = SideMenuNavigationController(rootViewController: MenuListController())
-        menu?.leftSide = true
-        menu?.setNavigationBarHidden(true, animated: false)
-        SideMenuManager.default.leftMenuNavigationController = menu
-        SideMenuManager.default.addPanGestureToPresent(toView: self.view)
-
-        // Do any additional setup after loading the view.
+        self.userName.text = self.name
+        
+        //  setUpElements()
+        //        menu = SideMenuNavigationController(rootViewController: MenuListController())
+        //        menu?.leftSide = true
+        //        menu?.setNavigationBarHidden(true, animated: false)
+        //        SideMenuManager.default.leftMenuNavigationController = menu
+        //        SideMenuManager.default.addPanGestureToPresent(toView: self.view)
+        //
+        //        // Do any additional setup after loading the view.
     }
-
+    
     
     func setUpElements(){
         Utilities.styleCircleButton(watch)
         Utilities.styleCircleButton(examples)
         Utilities.styleCircleButton(note)
-
-        
     }
     
     @IBAction func watchdidTap(_ sender: Any) {
         guard let vc = storyboard?.instantiateViewController(identifier: "YoutubeViewController") as? YoutubeViewController
-            else{
-        return
+        else{
+            return
         }
         navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func exampledidTap(_ sender: Any) {
     }
     @IBAction func notedidTap(_ sender: Any) {
-            guard let vc = storyboard?.instantiateViewController(identifier: "ListNotesViewController") as? ListNotesViewController
-                else{
+        guard let vc = storyboard?.instantiateViewController(identifier: "ListNotesViewController") as? ListNotesViewController
+        else{
             return
-            }
-            navigationController?.pushViewController(vc, animated: true)
         }
+        navigationController?.pushViewController(vc, animated: true)
+    }
     
-    @IBAction func didTapMenu(){
-        present(menu!,animated: true)
-    }
+    //    @IBAction func didTapMenu(){
+    //        present(menu!,animated: true)
+    //    }
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
 class MenuListController: UITableViewController{
     @IBOutlet var modeSwitch : UISwitch!
@@ -101,5 +99,5 @@ class MenuListController: UITableViewController{
     @IBAction func valueChanged (_ sender: Any){
         
     }
-
+    
 }

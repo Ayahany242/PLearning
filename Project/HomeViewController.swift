@@ -13,8 +13,6 @@ class HomeViewController: UIViewController , UITableViewDataSource,UITableViewDe
     struct Logo {
         let title : String
         let imageName :String
-        
-        
     }
     let data :[Logo] = [
         Logo(title: "C", imageName: "C"),
