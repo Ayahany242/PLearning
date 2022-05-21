@@ -13,6 +13,7 @@ protocol ListNotesDelegate: class {
 }
 
 class ListNotesViewController: UIViewController {
+    @IBOutlet weak var lable: UILabel!
     
     @IBOutlet weak private var tableView: UITableView!
     @IBOutlet weak private var notesCountLbl: UILabel!
@@ -54,7 +55,10 @@ class ListNotesViewController: UIViewController {
         let controller = storyboard?.instantiateViewController(identifier: EditNoteViewController.identifier) as! EditNoteViewController
         controller.note = note
         controller.delegate = self
+        self.lable.isHighlighted = true
+        self.tableView.isHidden = false
         navigationController?.pushViewController(controller, animated: true)
+
     }
     
     // MARK:- Methods to implement

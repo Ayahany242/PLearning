@@ -18,8 +18,8 @@ class EditNoteViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         textView.text = note?.text
+        self.navigationController?.navigationBar.isHidden = false
     }
     
     override func viewDidAppear(_ animated: Bool) {
