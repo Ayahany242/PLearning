@@ -13,8 +13,8 @@ class LanguageCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var languageImageView: UIImageView!
     
-    func setUp(with lang : Logo){
-        languageImageView.image = lang.imageName
-        titleLabel.text = lang.title
+    func setUp(with lang : Language){
+        languageImageView.showImage(lang.image)
+        titleLabel.text = lang.name
     }
 }

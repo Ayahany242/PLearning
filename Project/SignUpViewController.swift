@@ -13,45 +13,28 @@ import Firebase
 class SignUpViewController: UIViewController {
     
     @IBOutlet weak var firstNameTextField: UITextField!
-    
     @IBOutlet weak var lastNameTextField: UITextField!
-    
     @IBOutlet weak var emailTextField: UITextField!
-    
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signUpButton: UIButton!
-    
     @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var logInButton: UIButton!
-    var name = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
         setUpElements()
     }
+    
     func setUpElements(){
         //Hide the error label
         errorLabel.alpha = 0
-        
-        //style the element
-        
         Utilities.styleTextField(firstNameTextField)
         Utilities.styleTextField(lastNameTextField)
         Utilities.styleTextField(emailTextField)
         Utilities.styleTextField(passwordTextField)
-        
         Utilities.styleFilledButton(signUpButton)
-        
     }
-    @IBAction func haveAccbutton(_ sender: Any) {
-        guard let vc = storyboard?.instantiateViewController(identifier: "LoginViewController") as? LoginViewController
-            else{
-                return
-        }
-        navigationController?.pushViewController(vc, animated: true)
-    }
-    //check the field and validate that the data is correct. if everything is correct , this method return nill. otherwise it returns the erroe message as a sstring
+
     func validatefield() -> String?{
         
         //check  that all field are filled in
@@ -66,12 +49,13 @@ class SignUpViewController: UIViewController {
         let cleanedPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         if Utilities.isPasswordValid(cleanedPassword) == false {
             //password isnt secure enough
-            return "Please make sure your password is at least 8 charcter ,contain a special character and a number"
+            return "Please make sure your password is at least 6 charcter"
         }
         return nil
     }
     
     @IBAction func signUpTapped(_ sender: Any) {
+        
         //validate the fields
         let error = validatefield()
         if error != nil {
@@ -85,7 +69,10 @@ class SignUpViewController: UIViewController {
             let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             //Create the user
+            ActivityIndicator.instance.show(self.view)
             Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
+                UserDefaults.standard.set(true, forKey: "isLogin")
+                ActivityIndicator.instance.hide()
                 // check for error
                 if err != nil {
                     //There was an error creating the user
@@ -122,19 +109,14 @@ class SignUpViewController: UIViewController {
         errorLabel.text = message
         errorLabel.alpha = 1
     }
-    //func  transitionToHome(){
-    //    let homeViewController =
-    //    storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
-    //
-    //    view.window?.rootViewController = homeViewController
-    //    view.window?.makeKeyAndVisible()
-    //}
+
     @IBAction func logInTapped(_ sender: Any) {
-        let name = self.emailTextField.text
-        //            let storyboard = UIStoryboard(name: "main", bundle: nil)
-        if let viewcontroller = self.storyboard?.instantiateViewController(identifier: "LoginViewController") as? LoginViewController{
-            viewcontroller.name = name ?? ""
-            self.navigationController?.pushViewController(viewcontroller, animated: true)
+        if navigationController?.viewControllers.last is LoginViewController {
+            navigationController?.popViewController(animated: true)
+        } else {
+            if let viewcontroller = self.storyboard?.instantiateViewController(identifier: "LoginViewController") as? LoginViewController{
+                self.navigationController?.pushViewController(viewcontroller, animated: true)
+            }
         }
     }
     

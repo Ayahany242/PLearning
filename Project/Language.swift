@@ -2,29 +2,66 @@
 //  Language.swift
 //  Project
 //
-//  Created by Asma hassan on 5/12/22.
+//  Created by Afnan MacBook Pro on 21/05/2022.
 //  Copyright © 2022 Asma hassan. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-struct Logo {
-    let title : String
-    let imageName :UIImage
+struct Languages : Codable {
+
+    let languages : [Language]?
+
+
+    enum CodingKeys: String, CodingKey {
+        case languages = "languages"
+    }
     
-    
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        languages = try values.decodeIfPresent([Language].self, forKey: .languages)
+    }
 }
-let data :[Logo] = [
-    Logo(title: "C",imageName: #imageLiteral(resourceName: "C")),
-    Logo(title: "C++", imageName: #imageLiteral(resourceName: "C++")),
-    Logo(title: "C#", imageName: #imageLiteral(resourceName: "C#")),
-    Logo(title: "Java", imageName: #imageLiteral(resourceName: "Java")),
-    Logo(title: "JavaScript", imageName: #imageLiteral(resourceName: "JavaScript")),
-    Logo(title: "Flutter", imageName: #imageLiteral(resourceName: "Java")),
-    Logo(title: "Assembly Language", imageName: #imageLiteral(resourceName: "Asm")),
-    Logo(title: "Swift", imageName: #imageLiteral(resourceName: "Swift")),
-    Logo(title: "Objective-C", imageName: #imageLiteral(resourceName: "Swift")),
-    Logo(title: "Python", imageName: #imageLiteral(resourceName: "Python")),
-    Logo(title: "SQL", imageName: #imageLiteral(resourceName: "Sql"))
+struct Language : Codable {
 
-]
+    let desc : String?
+    let examples : [String]?
+    let image : String?
+    let name : String?
+    let videos : [Video]?
+
+
+    enum CodingKeys: String, CodingKey {
+        case desc = "desc"
+        case examples = "examples"
+        case image = "image"
+        case name = "name"
+        case videos = "videos"
+    }
+    
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        desc = try values.decodeIfPresent(String.self, forKey: .desc)
+        examples = try values.decodeIfPresent([String].self, forKey: .examples)
+        image = try values.decodeIfPresent(String.self, forKey: .image)
+        name = try values.decodeIfPresent(String.self, forKey: .name)
+        videos = try values.decodeIfPresent([Video].self, forKey: .videos)
+    }
+}
+struct Video : Codable {
+
+    let link : String?
+    let name : String?
+
+
+    enum CodingKeys: String, CodingKey {
+        case link = "link"
+        case name = "name"
+    }
+    
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        link = try values.decodeIfPresent(String.self, forKey: .link)
+        name = try values.decodeIfPresent(String.self, forKey: .name)
+    }
+}

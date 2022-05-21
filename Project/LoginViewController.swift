@@ -36,12 +36,9 @@ class LoginViewController: UIViewController {
     
     func setUpElements(){
         errorLabel.alpha = 0
-        
-        
         Utilities.styleTextField(emailTextField)
         Utilities.styleTextField(passwordTextField)
-        //    Utilities.styleFilledButton(logInButton)
-        
+        Utilities.styleFilledButton(logInButton)
     }
     
     @IBAction func logInTapped(_ sender: Any) {
@@ -52,16 +49,17 @@ class LoginViewController: UIViewController {
         // Create cleaned versions of the text field
         let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        
+        ActivityIndicator.instance.show(self.view)
         // Signing in the user
         Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
-            
+            ActivityIndicator.instance.hide()
             if error != nil {
                 // Couldn't sign in
                 self.errorLabel.text = error!.localizedDescription
                 self.errorLabel.alpha = 1
             } else {
-                guard let homeViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController else {return}
+                UserDefaults.standard.set(true, forKey: "isLogin")
+                guard let homeViewController = self.storyboard?.instantiateViewController(identifier: "LanguagesViewController") as? LanguagesViewController else {return}
                 self.navigationController?.pushViewController(homeViewController, animated: true)
                 
                 //                self.view.window?.rootViewController = homeViewController
@@ -77,10 +75,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func signUpTapped(_ sender: Any) {
-        let name = self.emailTextField.text
-        //            let storyboard = UIStoryboard(name: "main", bundle: nil)
         if let viewcontroller = self.storyboard?.instantiateViewController(identifier: "SignUpViewController") as? SignUpViewController{
-            viewcontroller.name = name ?? ""
             self.navigationController?.pushViewController(viewcontroller, animated: true)
         }
     }
