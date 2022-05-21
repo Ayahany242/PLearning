@@ -9,7 +9,7 @@ target 'Project' do
   pod 'youtube-ios-player-helper'
   pod 'Firebase/Firestore'
   pod 'Firebase/Database'
-  pod 'Kingfisher', '~> 7.0'
+  pod 'Kingfisher', '~> 6.0'
   pod 'SnapKit'
 
   # pod 'GoogleSignIn'
