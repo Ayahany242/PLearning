@@ -19,6 +19,7 @@
 		44B3409828384CC700E57958 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3409728384CC700E57958 /* Language.swift */; };
 		44B3409D28385F2500E57958 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3409C28385F2500E57958 /* UIImageView+Extension.swift */; };
 		44B340A0283861C700E57958 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3409F283861C700E57958 /* ActivityIndicator.swift */; };
+		44B839D2283A8A2300DA93BB /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B839D1283A8A2300DA93BB /* VideoCollectionViewCell.swift */; };
 		B735DAF5272F2AD600D3C4F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B735DAF4272F2AD600D3C4F4 /* AppDelegate.swift */; };
 		B735DAF7272F2AD600D3C4F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B735DAF6272F2AD600D3C4F4 /* SceneDelegate.swift */; };
 		B735DAF9272F2AD600D3C4F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B735DAF8272F2AD600D3C4F4 /* ViewController.swift */; };
@@ -28,11 +29,10 @@
 		B73B41A627B16DE90024D57B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73B41A527B16DE90024D57B /* LoginViewController.swift */; };
 		B73B41A827B16E060024D57B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73B41A727B16E060024D57B /* HomeViewController.swift */; };
 		B73B41B027B1BFD50024D57B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B73B41AF27B1BFD50024D57B /* GoogleService-Info.plist */; };
-		B745D72627DBF9CA002CF112 /* MyHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B745D72527DBF9CA002CF112 /* MyHomeViewController.swift */; };
+		B745D72627DBF9CA002CF112 /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B745D72527DBF9CA002CF112 /* VideosViewController.swift */; };
 		B749F0BC2834414900780C68 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B749F0BB2834414900780C68 /* ProfileViewController.swift */; };
 		B749F0BE28344CB200780C68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B749F0BD28344CB000780C68 /* Assets.xcassets */; };
 		B74E582127D2AB6100E39622 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74E582027D2AB6100E39622 /* DescriptionViewController.swift */; };
-		B760992127C9913700612B0D /* YoutubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B760992027C9913700612B0D /* YoutubeViewController.swift */; };
 		B7804F75282821AD00B961D6 /* ExampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7804F73282821AD00B961D6 /* ExampleTableViewCell.swift */; };
 		B7804F76282821AD00B961D6 /* ExampleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7804F74282821AD00B961D6 /* ExampleTableViewCell.xib */; };
 		B7804F782828296600B961D6 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7804F772828296600B961D6 /* ExampleViewController.swift */; };
@@ -59,6 +59,7 @@
 		44B3409728384CC700E57958 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		44B3409C28385F2500E57958 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		44B3409F283861C700E57958 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		44B839D1283A8A2300DA93BB /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
 		5196845F9E5264599B4A73C2 /* Pods_ProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C283678C0510DE281ECB2C2 /* Pods-Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project.debug.xcconfig"; path = "Target Support Files/Pods-Project/Pods-Project.debug.xcconfig"; sourceTree = "<group>"; };
 		6A5692E31E1C904C930144CA /* Pods-ProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-ProjectTests/Pods-ProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -77,11 +78,10 @@
 		B73B41A527B16DE90024D57B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B73B41A727B16E060024D57B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B73B41AF27B1BFD50024D57B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		B745D72527DBF9CA002CF112 /* MyHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHomeViewController.swift; sourceTree = "<group>"; };
+		B745D72527DBF9CA002CF112 /* VideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewController.swift; sourceTree = "<group>"; };
 		B749F0BB2834414900780C68 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		B749F0BD28344CB000780C68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B74E582027D2AB6100E39622 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
-		B760992027C9913700612B0D /* YoutubeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeViewController.swift; sourceTree = "<group>"; };
 		B7804F73282821AD00B961D6 /* ExampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTableViewCell.swift; sourceTree = "<group>"; };
 		B7804F74282821AD00B961D6 /* ExampleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleTableViewCell.xib; sourceTree = "<group>"; };
 		B7804F772828296600B961D6 /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
@@ -245,8 +245,6 @@
 				B749F0BD28344CB000780C68 /* Assets.xcassets */,
 				B73B41AF27B1BFD50024D57B /* GoogleService-Info.plist */,
 				030F888C27DEBB17004A0BE5 /* example.json */,
-				B7D4EB25282D86A800648852 /* LanguageCollectionViewCell.swift */,
-				B7D4EB27282D87DD00648852 /* LanguagesViewController.swift */,
 			);
 			path = Project;
 			sourceTree = "<group>";
@@ -256,13 +254,15 @@
 			children = (
 				03084BFC2830FFE800AC6EC8 /* StartViewController */,
 				03084BED2830FE7A00AC6EC8 /* Note */,
-				B745D72527DBF9CA002CF112 /* MyHomeViewController.swift */,
+				B745D72527DBF9CA002CF112 /* VideosViewController.swift */,
+				44B839D1283A8A2300DA93BB /* VideoCollectionViewCell.swift */,
 				B73B41A727B16E060024D57B /* HomeViewController.swift */,
 				B74E582027D2AB6100E39622 /* DescriptionViewController.swift */,
 				B7AE1DBF28118C4100C6B3A0 /* VedioViewController.swift */,
-				B760992027C9913700612B0D /* YoutubeViewController.swift */,
 				B749F0BB2834414900780C68 /* ProfileViewController.swift */,
 				B7804F772828296600B961D6 /* ExampleViewController.swift */,
+				B7D4EB25282D86A800648852 /* LanguageCollectionViewCell.swift */,
+				B7D4EB27282D87DD00648852 /* LanguagesViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -411,7 +411,6 @@
 				B7CB32BB27C6ABC300E81065 /* CustomTableViewCell.swift in Sources */,
 				03603FFF28300D14006DE387 /* Constants.swift in Sources */,
 				B735DAF9272F2AD600D3C4F4 /* ViewController.swift in Sources */,
-				B760992127C9913700612B0D /* YoutubeViewController.swift in Sources */,
 				B735DAF5272F2AD600D3C4F4 /* AppDelegate.swift in Sources */,
 				B73B41A427B16DC70024D57B /* SignUpViewController.swift in Sources */,
 				B7AE1DC028118C4100C6B3A0 /* VedioViewController.swift in Sources */,
@@ -422,10 +421,11 @@
 				B74E582127D2AB6100E39622 /* DescriptionViewController.swift in Sources */,
 				44B340A0283861C700E57958 /* ActivityIndicator.swift in Sources */,
 				B7D4EB26282D86A800648852 /* LanguageCollectionViewCell.swift in Sources */,
+				44B839D2283A8A2300DA93BB /* VideoCollectionViewCell.swift in Sources */,
 				03084BFE2831003400AC6EC8 /* StartViewController.swift in Sources */,
 				B73B41A827B16E060024D57B /* HomeViewController.swift in Sources */,
 				03084BF42830FF4D00AC6EC8 /* ListNotesViewController.swift in Sources */,
-				B745D72627DBF9CA002CF112 /* MyHomeViewController.swift in Sources */,
+				B745D72627DBF9CA002CF112 /* VideosViewController.swift in Sources */,
 				44B3409828384CC700E57958 /* Language.swift in Sources */,
 				0360400028300D14006DE387 /* Utilities.swift in Sources */,
 				B749F0BC2834414900780C68 /* ProfileViewController.swift in Sources */,

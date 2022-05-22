@@ -88,8 +88,8 @@ class SignUpViewController: UIViewController {
                         } else{
                             let name = self.firstNameTextField.text
                             //            let storyboard = UIStoryboard(name: "main", bundle: nil)
-                            if let viewcontroller = self.storyboard?.instantiateViewController(identifier: "MyHomeViewController") as? MyHomeViewController{
-                                viewcontroller.name = name ?? ""
+                            if let viewcontroller = self.storyboard?.instantiateViewController(identifier: "VideosViewController") as? VideosViewController{
+//                                viewcontroller.name = name ?? ""
                                 self.navigationController?.pushViewController(viewcontroller, animated: true)
                             }
                         }

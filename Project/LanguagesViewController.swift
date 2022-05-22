@@ -79,7 +79,10 @@ extension LanguagesViewController: UICollectionViewDelegateFlowLayout{
 
 extension LanguagesViewController:UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        //        print(data[indexPath.row].title)
+        guard let viewController = self.storyboard?.instantiateViewController(identifier: "VideosViewController") as? VideosViewController else {return}
+        viewController.language = languages[indexPath.row]
+        self.navigationController?.pushViewController(viewController, animated: true)
+            
     }
     
 }

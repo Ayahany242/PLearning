@@ -6,7 +6,7 @@ target 'Project' do
   use_frameworks!
   
   pod 'Firebase/Auth'
-  pod 'youtube-ios-player-helper'
+  pod 'YouTubePlayer', :git => 'https://github.com/weakfl/Swift-YouTube-Player.git', :branch => 'use-wkwebview' # replace with original pod after the pull request got merged
   pod 'Firebase/Firestore'
   pod 'Firebase/Database'
   pod 'Kingfisher', '~> 6.0'
