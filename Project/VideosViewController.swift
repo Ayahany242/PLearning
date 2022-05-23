@@ -40,7 +40,8 @@ extension VideosViewController :UICollectionViewDataSource {
 
 extension VideosViewController: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = collectionView.bounds.width / 2 - 20
+        // kan fe width /2
+        let width = collectionView.bounds.width  - 20
         return CGSize(width: width, height: width * 1.4)
     }
     
