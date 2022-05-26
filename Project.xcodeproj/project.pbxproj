@@ -29,6 +29,7 @@
 		B73B41A627B16DE90024D57B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73B41A527B16DE90024D57B /* LoginViewController.swift */; };
 		B73B41A827B16E060024D57B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73B41A727B16E060024D57B /* HomeViewController.swift */; };
 		B73B41B027B1BFD50024D57B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B73B41AF27B1BFD50024D57B /* GoogleService-Info.plist */; };
+		B73DBFC1284575F000E8C637 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73DBFC0284575F000E8C637 /* SettingViewController.swift */; };
 		B745D72627DBF9CA002CF112 /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B745D72527DBF9CA002CF112 /* VideosViewController.swift */; };
 		B749F0BC2834414900780C68 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B749F0BB2834414900780C68 /* ProfileViewController.swift */; };
 		B749F0BE28344CB200780C68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B749F0BD28344CB000780C68 /* Assets.xcassets */; };
@@ -78,6 +79,7 @@
 		B73B41A527B16DE90024D57B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B73B41A727B16E060024D57B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B73B41AF27B1BFD50024D57B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B73DBFC0284575F000E8C637 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		B745D72527DBF9CA002CF112 /* VideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewController.swift; sourceTree = "<group>"; };
 		B749F0BB2834414900780C68 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		B749F0BD28344CB000780C68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -253,18 +255,43 @@
 			isa = PBXGroup;
 			children = (
 				03084BFC2830FFE800AC6EC8 /* StartViewController */,
+				B73DBFC32845765E00E8C637 /* Home Language */,
+				B73DBFC22845761C00E8C637 /* Vedio */,
+				B73DBFC6284577A300E8C637 /* Setting */,
 				03084BED2830FE7A00AC6EC8 /* Note */,
-				B745D72527DBF9CA002CF112 /* VideosViewController.swift */,
-				44B839D1283A8A2300DA93BB /* VideoCollectionViewCell.swift */,
 				B73B41A727B16E060024D57B /* HomeViewController.swift */,
 				B74E582027D2AB6100E39622 /* DescriptionViewController.swift */,
 				B7AE1DBF28118C4100C6B3A0 /* VedioViewController.swift */,
 				B749F0BB2834414900780C68 /* ProfileViewController.swift */,
 				B7804F772828296600B961D6 /* ExampleViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		B73DBFC22845761C00E8C637 /* Vedio */ = {
+			isa = PBXGroup;
+			children = (
+				B745D72527DBF9CA002CF112 /* VideosViewController.swift */,
+				44B839D1283A8A2300DA93BB /* VideoCollectionViewCell.swift */,
+			);
+			name = Vedio;
+			sourceTree = "<group>";
+		};
+		B73DBFC32845765E00E8C637 /* Home Language */ = {
+			isa = PBXGroup;
+			children = (
 				B7D4EB25282D86A800648852 /* LanguageCollectionViewCell.swift */,
 				B7D4EB27282D87DD00648852 /* LanguagesViewController.swift */,
 			);
-			name = "View Controllers";
+			name = "Home Language";
+			sourceTree = "<group>";
+		};
+		B73DBFC6284577A300E8C637 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				B73DBFC0284575F000E8C637 /* SettingViewController.swift */,
+			);
+			name = Setting;
 			sourceTree = "<group>";
 		};
 		B7804F72282820F300B961D6 /* TableViewEX */ = {
@@ -423,6 +450,7 @@
 				B7D4EB26282D86A800648852 /* LanguageCollectionViewCell.swift in Sources */,
 				44B839D2283A8A2300DA93BB /* VideoCollectionViewCell.swift in Sources */,
 				03084BFE2831003400AC6EC8 /* StartViewController.swift in Sources */,
+				B73DBFC1284575F000E8C637 /* SettingViewController.swift in Sources */,
 				B73B41A827B16E060024D57B /* HomeViewController.swift in Sources */,
 				03084BF42830FF4D00AC6EC8 /* ListNotesViewController.swift in Sources */,
 				B745D72627DBF9CA002CF112 /* VideosViewController.swift in Sources */,
