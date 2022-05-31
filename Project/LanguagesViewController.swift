@@ -25,6 +25,11 @@ class LanguagesViewController: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = true
+    }
+    
     func setupSearchView() {
         searchView.layer.borderWidth = 1
         searchView.layer.borderColor = #colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1)
@@ -64,7 +69,7 @@ extension LanguagesViewController :UICollectionViewDataSource {
 
 extension LanguagesViewController: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = collectionView.bounds.width / 2 - 20
+        let width = collectionView.bounds.width / 2 - 24
         return CGSize(width: width, height: width * 1.4)
     }
     
@@ -75,11 +80,15 @@ extension LanguagesViewController: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 10
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 16)
+    }
 }
 
 extension LanguagesViewController:UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let viewController = self.storyboard?.instantiateViewController(identifier: "VideosViewController") as? VideosViewController else {return}
+        guard let viewController = self.storyboard?.instantiateViewController(identifier: "TabBarViewController") as? TabBarViewController else {return}
         viewController.language = languages[indexPath.row]
         self.navigationController?.pushViewController(viewController, animated: true)
             

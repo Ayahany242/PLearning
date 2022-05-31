@@ -16,10 +16,17 @@
 		030F888D27DEBB17004A0BE5 /* example.json in Resources */ = {isa = PBXBuildFile; fileRef = 030F888C27DEBB17004A0BE5 /* example.json */; };
 		03603FFF28300D14006DE387 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03603FFD28300D13006DE387 /* Constants.swift */; };
 		0360400028300D14006DE387 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03603FFE28300D13006DE387 /* Utilities.swift */; };
+		446184B82846A2E700BAF2CC /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446184B72846A2E700BAF2CC /* CustomView.swift */; };
 		44B3409828384CC700E57958 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3409728384CC700E57958 /* Language.swift */; };
 		44B3409D28385F2500E57958 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3409C28385F2500E57958 /* UIImageView+Extension.swift */; };
 		44B340A0283861C700E57958 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3409F283861C700E57958 /* ActivityIndicator.swift */; };
 		44B839D2283A8A2300DA93BB /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B839D1283A8A2300DA93BB /* VideoCollectionViewCell.swift */; };
+		44BA16E82846AE1300404135 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BA16E72846AE1300404135 /* UIFont+Extension.swift */; };
+		44BA16ED2846AE4700404135 /* Cairo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44BA16EA2846AE4700404135 /* Cairo-Regular.ttf */; };
+		44BA16EE2846AE4700404135 /* Cairo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44BA16EB2846AE4700404135 /* Cairo-Light.ttf */; };
+		44BA16EF2846AE4700404135 /* Cairo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44BA16EC2846AE4700404135 /* Cairo-Bold.ttf */; };
+		44BA16F12846AEA900404135 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BA16F02846AEA900404135 /* CustomLabel.swift */; };
+		44BA16F32846BB1C00404135 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BA16F22846BB1C00404135 /* TabBarViewController.swift */; };
 		B735DAF5272F2AD600D3C4F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B735DAF4272F2AD600D3C4F4 /* AppDelegate.swift */; };
 		B735DAF7272F2AD600D3C4F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B735DAF6272F2AD600D3C4F4 /* SceneDelegate.swift */; };
 		B735DAF9272F2AD600D3C4F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B735DAF8272F2AD600D3C4F4 /* ViewController.swift */; };
@@ -57,10 +64,17 @@
 		03603FFE28300D13006DE387 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		047E97D732E1ACE32E52D75E /* Pods-ProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectTests.release.xcconfig"; path = "Target Support Files/Pods-ProjectTests/Pods-ProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		0A6591A12917A349C2A2112B /* Pods-Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project.release.xcconfig"; path = "Target Support Files/Pods-Project/Pods-Project.release.xcconfig"; sourceTree = "<group>"; };
+		446184B72846A2E700BAF2CC /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		44B3409728384CC700E57958 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		44B3409C28385F2500E57958 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		44B3409F283861C700E57958 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		44B839D1283A8A2300DA93BB /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
+		44BA16E72846AE1300404135 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		44BA16EA2846AE4700404135 /* Cairo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Regular.ttf"; sourceTree = "<group>"; };
+		44BA16EB2846AE4700404135 /* Cairo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Light.ttf"; sourceTree = "<group>"; };
+		44BA16EC2846AE4700404135 /* Cairo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Bold.ttf"; sourceTree = "<group>"; };
+		44BA16F02846AEA900404135 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		44BA16F22846BB1C00404135 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		5196845F9E5264599B4A73C2 /* Pods_ProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C283678C0510DE281ECB2C2 /* Pods-Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project.debug.xcconfig"; path = "Target Support Files/Pods-Project/Pods-Project.debug.xcconfig"; sourceTree = "<group>"; };
 		6A5692E31E1C904C930144CA /* Pods-ProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-ProjectTests/Pods-ProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -191,11 +205,25 @@
 		44B3409E283861B300E57958 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				44BA16E92846AE4700404135 /* Fonts */,
 				03603FFD28300D13006DE387 /* Constants.swift */,
 				03603FFE28300D13006DE387 /* Utilities.swift */,
 				44B3409F283861C700E57958 /* ActivityIndicator.swift */,
+				446184B72846A2E700BAF2CC /* CustomView.swift */,
+				44BA16E72846AE1300404135 /* UIFont+Extension.swift */,
+				44BA16F02846AEA900404135 /* CustomLabel.swift */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		44BA16E92846AE4700404135 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				44BA16EA2846AE4700404135 /* Cairo-Regular.ttf */,
+				44BA16EB2846AE4700404135 /* Cairo-Light.ttf */,
+				44BA16EC2846AE4700404135 /* Cairo-Bold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		838D050C2D5A652FA39B34F5 /* Pods */ = {
@@ -256,7 +284,7 @@
 			children = (
 				03084BFC2830FFE800AC6EC8 /* StartViewController */,
 				B73DBFC32845765E00E8C637 /* Home Language */,
-				B73DBFC22845761C00E8C637 /* Vedio */,
+				B73DBFC22845761C00E8C637 /* Video */,
 				B73DBFC6284577A300E8C637 /* Setting */,
 				03084BED2830FE7A00AC6EC8 /* Note */,
 				B73B41A727B16E060024D57B /* HomeViewController.swift */,
@@ -264,17 +292,18 @@
 				B7AE1DBF28118C4100C6B3A0 /* VedioViewController.swift */,
 				B749F0BB2834414900780C68 /* ProfileViewController.swift */,
 				B7804F772828296600B961D6 /* ExampleViewController.swift */,
+				44BA16F22846BB1C00404135 /* TabBarViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
 		};
-		B73DBFC22845761C00E8C637 /* Vedio */ = {
+		B73DBFC22845761C00E8C637 /* Video */ = {
 			isa = PBXGroup;
 			children = (
 				B745D72527DBF9CA002CF112 /* VideosViewController.swift */,
 				44B839D1283A8A2300DA93BB /* VideoCollectionViewCell.swift */,
 			);
-			name = Vedio;
+			name = Video;
 			sourceTree = "<group>";
 		};
 		B73DBFC32845765E00E8C637 /* Home Language */ = {
@@ -374,10 +403,13 @@
 			files = (
 				B735DB01272F2AD800D3C4F4 /* LaunchScreen.storyboard in Resources */,
 				B7CB32BC27C6ABC300E81065 /* CustomTableViewCell.xib in Resources */,
+				44BA16ED2846AE4700404135 /* Cairo-Regular.ttf in Resources */,
 				B749F0BE28344CB200780C68 /* Assets.xcassets in Resources */,
 				030F888D27DEBB17004A0BE5 /* example.json in Resources */,
 				B73B41B027B1BFD50024D57B /* GoogleService-Info.plist in Resources */,
+				44BA16EF2846AE4700404135 /* Cairo-Bold.ttf in Resources */,
 				B7804F76282821AD00B961D6 /* ExampleTableViewCell.xib in Resources */,
+				44BA16EE2846AE4700404135 /* Cairo-Light.ttf in Resources */,
 				B735DAFC272F2AD600D3C4F4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +463,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44BA16F32846BB1C00404135 /* TabBarViewController.swift in Sources */,
 				03084BF32830FF4D00AC6EC8 /* EditNoteViewController.swift in Sources */,
 				03084BFA2830FFCA00AC6EC8 /* Date+Extension.swift in Sources */,
 				44B3409D28385F2500E57958 /* UIImageView+Extension.swift in Sources */,
@@ -441,13 +474,16 @@
 				B735DAF5272F2AD600D3C4F4 /* AppDelegate.swift in Sources */,
 				B73B41A427B16DC70024D57B /* SignUpViewController.swift in Sources */,
 				B7AE1DC028118C4100C6B3A0 /* VedioViewController.swift in Sources */,
+				446184B82846A2E700BAF2CC /* CustomView.swift in Sources */,
 				B73B41A627B16DE90024D57B /* LoginViewController.swift in Sources */,
 				B7D4EB28282D87DD00648852 /* LanguagesViewController.swift in Sources */,
 				B735DAF7272F2AD600D3C4F4 /* SceneDelegate.swift in Sources */,
 				B7804F75282821AD00B961D6 /* ExampleTableViewCell.swift in Sources */,
 				B74E582127D2AB6100E39622 /* DescriptionViewController.swift in Sources */,
 				44B340A0283861C700E57958 /* ActivityIndicator.swift in Sources */,
+				44BA16F12846AEA900404135 /* CustomLabel.swift in Sources */,
 				B7D4EB26282D86A800648852 /* LanguageCollectionViewCell.swift in Sources */,
+				44BA16E82846AE1300404135 /* UIFont+Extension.swift in Sources */,
 				44B839D2283A8A2300DA93BB /* VideoCollectionViewCell.swift in Sources */,
 				03084BFE2831003400AC6EC8 /* StartViewController.swift in Sources */,
 				B73DBFC1284575F000E8C637 /* SettingViewController.swift in Sources */,

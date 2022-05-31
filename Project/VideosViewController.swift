@@ -14,15 +14,27 @@ class VideosViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var descriptionLabel: UILabel!
-
+    @IBOutlet weak var seeMoreButton: UIButton!
+    
     var language: Language?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = false
-        self.navigationItem.title = language?.name
+        self.navigationController?.navigationItem.title = language?.name
         descriptionLabel.text = language?.desc
         collectionView.collectionViewLayout = UICollectionViewFlowLayout()
+    }
+    
+    @IBAction func seeMore(_ sender: UIButton) {
+        if descriptionLabel.numberOfLines == 2 && descriptionLabel.isTruncated {
+            descriptionLabel.numberOfLines = 0
+            seeMoreButton.setTitle("See Less", for: .normal)
+        } else {
+            descriptionLabel.numberOfLines = 2
+            seeMoreButton.setTitle("See More", for: .normal)
+        }
+        descriptionLabel.layoutIfNeeded()
     }
 }
 extension VideosViewController :UICollectionViewDataSource {
@@ -41,7 +53,7 @@ extension VideosViewController :UICollectionViewDataSource {
 extension VideosViewController: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         // kan fe width /2
-        let width = collectionView.bounds.width  - 20
+        let width = collectionView.bounds.width
         return CGSize(width: width, height: width * 1.4)
     }
     

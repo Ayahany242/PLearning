@@ -36,10 +36,29 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.frame = UIScreen.main.bounds
         //        let viewController: CitiesTableViewController = CitiesConfigurator.configure()
         window?.rootViewController = nav
+        setupNavigationBarColors()
         window?.makeKeyAndVisible()
         (UIApplication.shared.delegate as? AppDelegate)?.window = window
     }
     
+    func setupNavigationBarColors() {
+        let navBarAppearance = UINavigationBarAppearance()
+        navBarAppearance.configureWithOpaqueBackground()
+        navBarAppearance.backgroundColor = UIColor.white
+        UINavigationBar.appearance().standardAppearance = navBarAppearance
+        UINavigationBar.appearance().tintColor = #colorLiteral(red: 0.3249999881, green: 0.3449999988, blue: 0.8820000291, alpha: 1)
+        UINavigationBar.appearance().barTintColor = .white
+        UINavigationBar.appearance().backgroundColor = .white
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.3249999881, green: 0.3449999988, blue: 0.8820000291, alpha: 1), NSAttributedString.Key.font: UIFont.appFontRegular(ofSize: 13)]
+        addNavigationBarShadow()
+    }
+    
+    func addNavigationBarShadow() {
+        UINavigationBar.appearance().layer.shadowOffset = CGSize(width: 1, height: 1)
+        UINavigationBar.appearance().layer.shadowColor = UIColor.black.cgColor
+        UINavigationBar.appearance().layer.shadowOpacity = 1
+        UINavigationBar.appearance().layer.shadowRadius = 5
+    }
     
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.

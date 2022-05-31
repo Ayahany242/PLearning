@@ -42,11 +42,6 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func logInTapped(_ sender: Any) {
-        // validate the text field
-        // sign in in the user
-        // TODO: Validate Text Fields
-        
-        // Create cleaned versions of the text field
         let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         ActivityIndicator.instance.show(self.view)
@@ -61,17 +56,8 @@ class LoginViewController: UIViewController {
                 UserDefaults.standard.set(true, forKey: "isLogin")
                 guard let homeViewController = self.storyboard?.instantiateViewController(identifier: "LanguagesViewController") as? LanguagesViewController else {return}
                 self.navigationController?.pushViewController(homeViewController, animated: true)
-                
-                //                self.view.window?.rootViewController = homeViewController
-                //                self.view.window?.makeKeyAndVisible()
             }
         }
-        
-        //        let name = self.emailTextField.text
-        //        if let viewcontroller = storyboard?.instantiateViewController(identifier: "MyHomeViewController") as? MyHomeViewController {
-        //            viewcontroller.name = name ?? ""
-        //            self.navigationController?.pushViewController(viewcontroller, animated: true)
-        //        }
     }
     
     @IBAction func signUpTapped(_ sender: Any) {
