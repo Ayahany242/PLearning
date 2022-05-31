@@ -18,28 +18,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate  {
         
         FirebaseApp.configure()
 //
-//        if #available(iOS 13.0, *) {
-//            self.window?.overrideUserInterfaceStyle = .light
-//        }
-//        self.window = UIWindow(frame: UIScreen.main.bounds)
+        if #available(iOS 13.0, *) {
+            self.window?.overrideUserInterfaceStyle = .light
+        }
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        var nav: UINavigationController?
+        let isLogin = UserDefaults.standard.bool(forKey: "isLogin")
 //
-//        var nav: UINavigationController?
+//     var nav: UINavigationController?
 //        let isLogin = UserDefaults.standard.bool(forKey: "isLogin")
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil) // Where "Main" is the storyboard file name
-//        if isLogin {
-//            guard let vc = storyboard.instantiateViewController(identifier: "LanguagesViewController") as? LanguagesViewController
-//            else { return true}
-//            nav = UINavigationController(rootViewController: vc)
-//        } else {
-//            guard let vc = storyboard.instantiateViewController(identifier: "StartViewController") as? StartViewController
-//            else { return true}
-//            nav = UINavigationController(rootViewController: vc)
-//        }
-//        nav?.isNavigationBarHidden = true
-////        DarkModeConfiguration.instance.changeToLightMode()
-//        self.window?.rootViewController = nav
-//        self.window?.makeKeyAndVisible()
-//
+        let storyboard = UIStoryboard(name: "Main", bundle: nil) // Where "Main" is the storyboard file name
+        if isLogin {
+            guard let vc = storyboard.instantiateViewController(identifier: "LanguagesViewController") as? LanguagesViewController
+            else { return true}
+            nav = UINavigationController(rootViewController: vc)
+        } else {
+            guard let vc = storyboard.instantiateViewController(identifier: "StartViewController") as? StartViewController
+            else { return true}
+            nav = UINavigationController(rootViewController: vc)
+        }
+        nav?.isNavigationBarHidden = true
+//        DarkModeConfiguration.instance.changeToLightMode()
+        self.window?.rootViewController = nav
+        self.window?.makeKeyAndVisible()
+
         return true
     }
 
