@@ -23,9 +23,10 @@ class Utilities {
         
         // Remove border on text field
         textfield.borderStyle = .none
-        
+
         // Add the line to the text field
         textfield.layer.addSublayer(bottomLine)
+        
         
     }
     static func styleMyHomeButton(button: UIButton){

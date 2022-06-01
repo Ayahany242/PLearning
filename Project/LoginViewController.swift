@@ -22,24 +22,19 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
-        setUpElements()
-        
-        
-        //add google signin button
-        //
-        //        let googleButton = GIDSignInButton()
-        //        googleButton.frame = CGRect(x: 16, y: 116 + 80, width: view.frame.width - 32, height: 50)
-        //        view.addSubview(googleButton)
+        errorLabel.alpha = 0
     }
     
-    func setUpElements(){
-        errorLabel.alpha = 0
-        Utilities.styleTextField(emailTextField)
-        Utilities.styleTextField(passwordTextField)
-        Utilities.styleFilledButton(logInButton)
-    }
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//        setUpElements()
+//    }
+//    
+//    func setUpElements(){
+//        Utilities.styleTextField(emailTextField)
+//        Utilities.styleTextField(passwordTextField)
+//        Utilities.styleFilledButton(logInButton)
+//    }
     
     @IBAction func logInTapped(_ sender: Any) {
         let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)

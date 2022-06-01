@@ -22,20 +22,24 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUpElements()
+        errorLabel.alpha = 0
     }
     
-    func setUpElements(){
-        //Hide the error label
-        errorLabel.alpha = 0
-        Utilities.styleTextField(firstNameTextField)
-        Utilities.styleTextField(lastNameTextField)
-        Utilities.styleTextField(emailTextField)
-        Utilities.styleTextField(passwordTextField)
-        Utilities.styleFilledButton(signUpButton)
-    }
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//        setUpElements()
+//    }
+//
+//    func setUpElements(){
+//        //Hide the error label
+//        Utilities.styleTextField(firstNameTextField)
+//        Utilities.styleTextField(lastNameTextField)
+//        Utilities.styleTextField(emailTextField)
+//        Utilities.styleTextField(passwordTextField)
+//        Utilities.styleFilledButton(signUpButton)
+//    }
 
-    func validatefield() -> String?{
+    func validatefield() -> String? {
         
         //check  that all field are filled in
         if firstNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||

@@ -64,6 +64,8 @@ extension TabBarViewController: UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         if type(of: viewController) == VideosViewController.self {
             (viewController as? VideosViewController)?.language = language
+        } else if  type(of: viewController) == ExampleViewController.self  {
+            (viewController as? ExampleViewController)?.language = language
         } else if type(of: viewController) == ProfileViewController.self {
 
         }
