@@ -27,6 +27,10 @@
 		44BA16EF2846AE4700404135 /* Cairo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44BA16EC2846AE4700404135 /* Cairo-Bold.ttf */; };
 		44BA16F12846AEA900404135 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BA16F02846AEA900404135 /* CustomLabel.swift */; };
 		44BA16F32846BB1C00404135 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BA16F22846BB1C00404135 /* TabBarViewController.swift */; };
+		B70C107B28477FFE009FB380 /* FSPagerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70C107A28477FFD009FB380 /* FSPagerCollectionView.swift */; };
+		B70C107D2847806B009FB380 /* FSPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70C107C2847806A009FB380 /* FSPageControl.swift */; };
+		B70C107F284781B4009FB380 /* FSPagerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70C107E284781B4009FB380 /* FSPagerViewCell.swift */; };
+		B70C1081284781F6009FB380 /* FSPageViewTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70C1080284781F5009FB380 /* FSPageViewTransformer.swift */; };
 		B735DAF5272F2AD600D3C4F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B735DAF4272F2AD600D3C4F4 /* AppDelegate.swift */; };
 		B735DAF7272F2AD600D3C4F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B735DAF6272F2AD600D3C4F4 /* SceneDelegate.swift */; };
 		B735DAF9272F2AD600D3C4F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B735DAF8272F2AD600D3C4F4 /* ViewController.swift */; };
@@ -82,6 +86,10 @@
 		90B736C964553B89724E5F28 /* Pods-Project-ProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project-ProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-Project-ProjectUITests/Pods-Project-ProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		938FD88096FE96A7E310CFE0 /* Pods_Project_ProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project_ProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D596473093176EC33D12BC5 /* Pods-Project-ProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project-ProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-Project-ProjectUITests/Pods-Project-ProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B70C107A28477FFD009FB380 /* FSPagerCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPagerCollectionView.swift; sourceTree = "<group>"; };
+		B70C107C2847806A009FB380 /* FSPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPageControl.swift; sourceTree = "<group>"; };
+		B70C107E284781B4009FB380 /* FSPagerViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPagerViewCell.swift; sourceTree = "<group>"; };
+		B70C1080284781F5009FB380 /* FSPageViewTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPageViewTransformer.swift; sourceTree = "<group>"; };
 		B735DAF1272F2AD600D3C4F4 /* Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B735DAF4272F2AD600D3C4F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B735DAF6272F2AD600D3C4F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -291,6 +299,10 @@
 				B74E582027D2AB6100E39622 /* DescriptionViewController.swift */,
 				B7AE1DBF28118C4100C6B3A0 /* VedioViewController.swift */,
 				B749F0BB2834414900780C68 /* ProfileViewController.swift */,
+				B70C107C2847806A009FB380 /* FSPageControl.swift */,
+				B70C107A28477FFD009FB380 /* FSPagerCollectionView.swift */,
+				B70C107E284781B4009FB380 /* FSPagerViewCell.swift */,
+				B70C1080284781F5009FB380 /* FSPageViewTransformer.swift */,
 				B7804F772828296600B961D6 /* ExampleViewController.swift */,
 				44BA16F22846BB1C00404135 /* TabBarViewController.swift */,
 			);
@@ -466,8 +478,10 @@
 				44BA16F32846BB1C00404135 /* TabBarViewController.swift in Sources */,
 				03084BF32830FF4D00AC6EC8 /* EditNoteViewController.swift in Sources */,
 				03084BFA2830FFCA00AC6EC8 /* Date+Extension.swift in Sources */,
+				B70C107D2847806B009FB380 /* FSPageControl.swift in Sources */,
 				44B3409D28385F2500E57958 /* UIImageView+Extension.swift in Sources */,
 				03084BFB2830FFCA00AC6EC8 /* Note.swift in Sources */,
+				B70C1081284781F6009FB380 /* FSPageViewTransformer.swift in Sources */,
 				B7CB32BB27C6ABC300E81065 /* CustomTableViewCell.swift in Sources */,
 				03603FFF28300D14006DE387 /* Constants.swift in Sources */,
 				B735DAF9272F2AD600D3C4F4 /* ViewController.swift in Sources */,
@@ -482,6 +496,7 @@
 				B74E582127D2AB6100E39622 /* DescriptionViewController.swift in Sources */,
 				44B340A0283861C700E57958 /* ActivityIndicator.swift in Sources */,
 				44BA16F12846AEA900404135 /* CustomLabel.swift in Sources */,
+				B70C107B28477FFE009FB380 /* FSPagerCollectionView.swift in Sources */,
 				B7D4EB26282D86A800648852 /* LanguageCollectionViewCell.swift in Sources */,
 				44BA16E82846AE1300404135 /* UIFont+Extension.swift in Sources */,
 				44B839D2283A8A2300DA93BB /* VideoCollectionViewCell.swift in Sources */,
@@ -493,6 +508,7 @@
 				44B3409828384CC700E57958 /* Language.swift in Sources */,
 				0360400028300D14006DE387 /* Utilities.swift in Sources */,
 				B749F0BC2834414900780C68 /* ProfileViewController.swift in Sources */,
+				B70C107F284781B4009FB380 /* FSPagerViewCell.swift in Sources */,
 				B7804F782828296600B961D6 /* ExampleViewController.swift in Sources */,
 				03084BF52830FF4D00AC6EC8 /* ListNoteTableViewCell.swift in Sources */,
 			);

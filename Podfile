@@ -11,6 +11,7 @@ target 'Project' do
   pod 'Firebase/Database'
   pod 'Kingfisher', '~> 6.0'
   pod 'SnapKit'
+  pod 'FSPagerView'
 
   # pod 'GoogleSignIn'
  # pod 'FBSDKLoginKit'
