@@ -149,4 +149,9 @@ open class FSPagerViewCell: UICollectionViewCell {
         }
     }
     
+    func setUp(with lang : Language){
+        imageView?.showImage(lang.image)
+        //titleLabel.text = lang.name
+    }
+    
 }

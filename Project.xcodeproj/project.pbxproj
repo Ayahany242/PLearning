@@ -31,6 +31,10 @@
 		B70C107D2847806B009FB380 /* FSPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70C107C2847806A009FB380 /* FSPageControl.swift */; };
 		B70C107F284781B4009FB380 /* FSPagerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70C107E284781B4009FB380 /* FSPagerViewCell.swift */; };
 		B70C1081284781F6009FB380 /* FSPageViewTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70C1080284781F5009FB380 /* FSPageViewTransformer.swift */; };
+		B70C108528478AC1009FB380 /* FSPagerViewLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70C108428478AC1009FB380 /* FSPagerViewLayoutAttributes.swift */; };
+		B70C108728478C28009FB380 /* FSPagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70C108628478C27009FB380 /* FSPagerView.swift */; };
+		B70C108B28478CCD009FB380 /* FSPagerViewObjcCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = B70C108A28478CCC009FB380 /* FSPagerViewObjcCompat.m */; };
+		B70C108F2847924A009FB380 /* FSPageViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70C108E2847924A009FB380 /* FSPageViewLayout.swift */; };
 		B735DAF5272F2AD600D3C4F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B735DAF4272F2AD600D3C4F4 /* AppDelegate.swift */; };
 		B735DAF7272F2AD600D3C4F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B735DAF6272F2AD600D3C4F4 /* SceneDelegate.swift */; };
 		B735DAF9272F2AD600D3C4F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B735DAF8272F2AD600D3C4F4 /* ViewController.swift */; };
@@ -90,6 +94,12 @@
 		B70C107C2847806A009FB380 /* FSPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPageControl.swift; sourceTree = "<group>"; };
 		B70C107E284781B4009FB380 /* FSPagerViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPagerViewCell.swift; sourceTree = "<group>"; };
 		B70C1080284781F5009FB380 /* FSPageViewTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPageViewTransformer.swift; sourceTree = "<group>"; };
+		B70C108428478AC1009FB380 /* FSPagerViewLayoutAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPagerViewLayoutAttributes.swift; sourceTree = "<group>"; };
+		B70C108628478C27009FB380 /* FSPagerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPagerView.swift; sourceTree = "<group>"; };
+		B70C108828478C9A009FB380 /* FSPagerViewObjcCompat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSPagerViewObjcCompat.h; sourceTree = "<group>"; };
+		B70C108928478CCA009FB380 /* Project-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Project-Bridging-Header.h"; sourceTree = "<group>"; };
+		B70C108A28478CCC009FB380 /* FSPagerViewObjcCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSPagerViewObjcCompat.m; sourceTree = "<group>"; };
+		B70C108E2847924A009FB380 /* FSPageViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPageViewLayout.swift; sourceTree = "<group>"; };
 		B735DAF1272F2AD600D3C4F4 /* Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B735DAF4272F2AD600D3C4F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B735DAF6272F2AD600D3C4F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -247,6 +257,24 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B70C108D28478CF6009FB380 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				B70C107C2847806A009FB380 /* FSPageControl.swift */,
+				B70C108428478AC1009FB380 /* FSPagerViewLayoutAttributes.swift */,
+				B70C107A28477FFD009FB380 /* FSPagerCollectionView.swift */,
+				B7804F772828296600B961D6 /* ExampleViewController.swift */,
+				B70C1080284781F5009FB380 /* FSPageViewTransformer.swift */,
+				B70C108828478C9A009FB380 /* FSPagerViewObjcCompat.h */,
+				B70C108A28478CCC009FB380 /* FSPagerViewObjcCompat.m */,
+				B70C108928478CCA009FB380 /* Project-Bridging-Header.h */,
+				B70C108E2847924A009FB380 /* FSPageViewLayout.swift */,
+				B70C107E284781B4009FB380 /* FSPagerViewCell.swift */,
+				B70C108628478C27009FB380 /* FSPagerView.swift */,
+			);
+			name = Example;
+			sourceTree = "<group>";
+		};
 		B735DAE8272F2AD500D3C4F4 = {
 			isa = PBXGroup;
 			children = (
@@ -290,6 +318,7 @@
 		B73B41A927B16E220024D57B /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B70C108D28478CF6009FB380 /* Example */,
 				03084BFC2830FFE800AC6EC8 /* StartViewController */,
 				B73DBFC32845765E00E8C637 /* Home Language */,
 				B73DBFC22845761C00E8C637 /* Video */,
@@ -299,11 +328,6 @@
 				B74E582027D2AB6100E39622 /* DescriptionViewController.swift */,
 				B7AE1DBF28118C4100C6B3A0 /* VedioViewController.swift */,
 				B749F0BB2834414900780C68 /* ProfileViewController.swift */,
-				B70C107C2847806A009FB380 /* FSPageControl.swift */,
-				B70C107A28477FFD009FB380 /* FSPagerCollectionView.swift */,
-				B70C107E284781B4009FB380 /* FSPagerViewCell.swift */,
-				B70C1080284781F5009FB380 /* FSPageViewTransformer.swift */,
-				B7804F772828296600B961D6 /* ExampleViewController.swift */,
 				44BA16F22846BB1C00404135 /* TabBarViewController.swift */,
 			);
 			name = "View Controllers";
@@ -387,6 +411,7 @@
 				TargetAttributes = {
 					B735DAF0272F2AD500D3C4F4 = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 				};
 			};
@@ -484,6 +509,7 @@
 				B70C1081284781F6009FB380 /* FSPageViewTransformer.swift in Sources */,
 				B7CB32BB27C6ABC300E81065 /* CustomTableViewCell.swift in Sources */,
 				03603FFF28300D14006DE387 /* Constants.swift in Sources */,
+				B70C108728478C28009FB380 /* FSPagerView.swift in Sources */,
 				B735DAF9272F2AD600D3C4F4 /* ViewController.swift in Sources */,
 				B735DAF5272F2AD600D3C4F4 /* AppDelegate.swift in Sources */,
 				B73B41A427B16DC70024D57B /* SignUpViewController.swift in Sources */,
@@ -506,11 +532,14 @@
 				03084BF42830FF4D00AC6EC8 /* ListNotesViewController.swift in Sources */,
 				B745D72627DBF9CA002CF112 /* VideosViewController.swift in Sources */,
 				44B3409828384CC700E57958 /* Language.swift in Sources */,
+				B70C108F2847924A009FB380 /* FSPageViewLayout.swift in Sources */,
 				0360400028300D14006DE387 /* Utilities.swift in Sources */,
 				B749F0BC2834414900780C68 /* ProfileViewController.swift in Sources */,
 				B70C107F284781B4009FB380 /* FSPagerViewCell.swift in Sources */,
 				B7804F782828296600B961D6 /* ExampleViewController.swift in Sources */,
+				B70C108528478AC1009FB380 /* FSPagerViewLayoutAttributes.swift in Sources */,
 				03084BF52830FF4D00AC6EC8 /* ListNoteTableViewCell.swift in Sources */,
+				B70C108B28478CCD009FB380 /* FSPagerViewObjcCompat.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -655,6 +684,7 @@
 			baseConfigurationReference = 5C283678C0510DE281ECB2C2 /* Pods-Project.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Project/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
@@ -664,6 +694,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lec2.Project;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Project/Project-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -674,6 +706,7 @@
 			baseConfigurationReference = 0A6591A12917A349C2A2112B /* Pods-Project.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Project/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
@@ -683,6 +716,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lec2.Project;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Project/Project-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -15,42 +15,63 @@
 //            self.pagerView.register(FSPagerViewCell.self, forCellWithReuseIdentifier: "cell")
 //        }
 //    }
+//    var languages = [Language]()
+//    
 //    override func viewDidLoad() {
 //        super.viewDidLoad()
-//        let pagerView = FSPagerView(frame: frame1)
-//        pagerView.dataSource = self
-//        pagerView.delegate = self
+//        // Create a pager view
+//        let pagerView = FSPagerView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
+//        // pagerView.dataSource = self
+//        //pagerView.delegate = self
 //        pagerView.register(FSPagerViewCell.self, forCellWithReuseIdentifier: "cell")
 //        self.view.addSubview(pagerView)
 //        // Create a page control
-//        let pageControl = FSPageControl(frame: frame2)
+//        let pageControl = FSPageControl(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
 //        self.view.addSubview(pageControl)
+//        
 //    }
-//
+//    deinit {
+//        self.pagerView.dataSource = nil
+//        self.pagerView.delegate = nil
+//    }
+//    func getExamples() {
+//        ActivityIndicator.instance.show(self.view)
+//        Constants.languageRef.observeSingleEvent(of: .value, with: { snapshot in
+//            // Get user value
+//            ActivityIndicator.instance.hide()
+//            do {
+//                guard let value = snapshot.value else {return}
+//                guard let data = try? JSONSerialization.data(withJSONObject: value) else {return}
+//                self.languages = try JSONDecoder().decode([Language].self, from: data)
+//                self.pagerView.reloadData()
+//            } catch let error {
+//                print("Failed to decode JSON \(error)")
+//            }
+//        }) { error in
+//            print(error.localizedDescription)
+//        }
+//    }
 //    public func numberOfItems(in pagerView: FSPagerView) -> Int {
-//        return 4
+//        return languages.count
 //    }
-//
+//    
 //    public func pagerView(_ pagerView: FSPagerView, cellForItemAt index: Int) -> FSPagerViewCell {
 //        let cell = pagerView.dequeueReusableCell(withReuseIdentifier: "cell", at: index)
-//        cell.imageView?.image = ...
-//        cell.textLabel?.text = ...
+//        let example = languages[index]
+//        cell.setUp(with: example)
 //        return cell
 //    }
-//    func pagerView(_ pagerView: FSPagerView, shouldHighlightItemAt index: Int) -> Bool{}
-//    func pagerView(_ pagerView: FSPagerView, didHighlightItemAt index: Int)
-////    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-////        return data.count
-////    }
-////    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-////        let logo = data[indexPath.row]
-////        let cell = tableView.dequeueReusableCell(withIdentifier: "ExampleTableViewCell", for: indexPath) as! ExampleTableViewCell
-////        cell.label.text = logo.title
-////        cell.ImageView.image = UIImage(named: logo.imageName)
-////        return cell
-////    }
-////    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-////        return 100
-////    }
-//
+//    func pagerView(_ pagerView: FSPagerView, willDisplay cell: FSPagerViewCell, forItemAt index: Int){
+//        let function = FSPagerViewDelegate.self
+//        let index = cell
+//        function(self,cell as! FSPagerViewCell,index)
+//    }
+//    func setupPagerView(){
+//        pagerView.transformer = FSPagerViewTransformer(type: .zoomOut)
+//        pageControl.numberOfPages = 5
+//        
+//        
+//        
+//    }
+//    
 //}
