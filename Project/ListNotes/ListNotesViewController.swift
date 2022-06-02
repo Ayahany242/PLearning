@@ -18,6 +18,7 @@ class ListNotesViewController: UIViewController {
     @IBOutlet weak private var tableView: UITableView!
     @IBOutlet weak private var notesCountLbl: UILabel!
     private let searchController = UISearchController()
+    let userDefaults = UserDefaults()
     
     private var allNotes: [Note] = [] {
         didSet {
@@ -59,6 +60,8 @@ class ListNotesViewController: UIViewController {
         self.tableView.isHidden = false
         navigationController?.pushViewController(controller, animated: true)
 
+        userDefaults.setValue(note, forKey: "notesDef")
+        
     }
     
     // MARK:- Methods to implement
@@ -118,6 +121,7 @@ extension ListNotesViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
+    
 }
 
 // MARK:- Search Controller Configuration

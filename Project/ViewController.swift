@@ -19,8 +19,6 @@ class ViewController: UIViewController {
 
     func setUpElements(){
         Utilities.styleFilledButton(signUpButton)
-        Utilities.styleFilledButton(logInButton)        
+        Utilities.styleFilledButton(logInButton)
     }
-
 }
-
