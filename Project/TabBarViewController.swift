@@ -67,8 +67,9 @@ extension TabBarViewController: UITabBarControllerDelegate {
         } else if  type(of: viewController) == ExampleViewController.self  {
             (viewController as? ExampleViewController)?.language = language
         } else if type(of: viewController) == ProfileViewController.self {
-
+            
         }
+
         return true
     }
 }

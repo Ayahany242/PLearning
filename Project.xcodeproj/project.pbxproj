@@ -38,6 +38,7 @@
 		B73B41A827B16E060024D57B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73B41A727B16E060024D57B /* HomeViewController.swift */; };
 		B73B41B027B1BFD50024D57B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B73B41AF27B1BFD50024D57B /* GoogleService-Info.plist */; };
 		B73DBFC1284575F000E8C637 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73DBFC0284575F000E8C637 /* SettingViewController.swift */; };
+		B7453FF9284923D3002C550C /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7453FF8284923D3002C550C /* AboutUsViewController.swift */; };
 		B745D72627DBF9CA002CF112 /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B745D72527DBF9CA002CF112 /* VideosViewController.swift */; };
 		B749F0BC2834414900780C68 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B749F0BB2834414900780C68 /* ProfileViewController.swift */; };
 		B749F0BE28344CB200780C68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B749F0BD28344CB000780C68 /* Assets.xcassets */; };
@@ -97,6 +98,7 @@
 		B73B41A727B16E060024D57B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B73B41AF27B1BFD50024D57B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B73DBFC0284575F000E8C637 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		B7453FF8284923D3002C550C /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		B745D72527DBF9CA002CF112 /* VideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewController.swift; sourceTree = "<group>"; };
 		B749F0BB2834414900780C68 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		B749F0BD28344CB000780C68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -295,17 +297,18 @@
 		B73B41A927B16E220024D57B /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B70C108D28478CF6009FB380 /* Example */,
 				03084BFC2830FFE800AC6EC8 /* StartViewController */,
 				B73DBFC32845765E00E8C637 /* Home Language */,
 				B73DBFC22845761C00E8C637 /* Video */,
+				B70C108D28478CF6009FB380 /* Example */,
 				B73DBFC6284577A300E8C637 /* Setting */,
 				03084BED2830FE7A00AC6EC8 /* Note */,
+				B749F0BB2834414900780C68 /* ProfileViewController.swift */,
+				44BA16F22846BB1C00404135 /* TabBarViewController.swift */,
+				B7453FF8284923D3002C550C /* AboutUsViewController.swift */,
 				B73B41A727B16E060024D57B /* HomeViewController.swift */,
 				B74E582027D2AB6100E39622 /* DescriptionViewController.swift */,
 				B7AE1DBF28118C4100C6B3A0 /* VedioViewController.swift */,
-				B749F0BB2834414900780C68 /* ProfileViewController.swift */,
-				44BA16F22846BB1C00404135 /* TabBarViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -489,6 +492,7 @@
 				B73B41A427B16DC70024D57B /* SignUpViewController.swift in Sources */,
 				B7AE1DC028118C4100C6B3A0 /* VedioViewController.swift in Sources */,
 				446184B82846A2E700BAF2CC /* CustomView.swift in Sources */,
+				B7453FF9284923D3002C550C /* AboutUsViewController.swift in Sources */,
 				B73B41A627B16DE90024D57B /* LoginViewController.swift in Sources */,
 				B7D4EB28282D87DD00648852 /* LanguagesViewController.swift in Sources */,
 				B735DAF7272F2AD600D3C4F4 /* SceneDelegate.swift in Sources */,
