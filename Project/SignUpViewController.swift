@@ -10,7 +10,7 @@ import UIKit
 import FirebaseAuth
 
 import FirebaseFirestore
-class SignUpViewController: UIViewController {
+class SignUpViewController: UIViewController  , UITextFieldDelegate {
     
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
@@ -20,25 +20,30 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var logInButton: UIButton!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
+//        if let value = userDefaults.value(forKey: "firstname") as? String{
+//            label.text = value
+
         errorLabel.alpha = 0
     }
     
-//    override func viewDidAppear(_ animated: Bool) {
-//        super.viewDidAppear(animated)
-//        setUpElements()
-//    }
-//
-//    func setUpElements(){
-//        //Hide the error label
-//        Utilities.styleTextField(firstNameTextField)
-//        Utilities.styleTextField(lastNameTextField)
-//        Utilities.styleTextField(emailTextField)
-//        Utilities.styleTextField(passwordTextField)
-//        Utilities.styleFilledButton(signUpButton)
-//    }
-
+    //    override func viewDidAppear(_ animated: Bool) {
+    //        super.viewDidAppear(animated)
+    //        setUpElements()
+    //    }
+    //
+    //    func setUpElements(){
+    //        //Hide the error label
+    //        Utilities.styleTextField(firstNameTextField)
+    //        Utilities.styleTextField(lastNameTextField)
+    //        Utilities.styleTextField(emailTextField)
+    //        Utilities.styleTextField(passwordTextField)
+    //        Utilities.styleFilledButton(signUpButton)
+    //    }
+    
     func validatefield() -> String? {
         
         //check  that all field are filled in
@@ -93,27 +98,22 @@ class SignUpViewController: UIViewController {
                             let name = self.firstNameTextField.text
                             //            let storyboard = UIStoryboard(name: "main", bundle: nil)
                             if let viewcontroller = self.storyboard?.instantiateViewController(identifier: "VideosViewController") as? VideosViewController{
-//                                viewcontroller.name = name ?? ""
+                                //                                viewcontroller.name = name ?? ""
                                 self.navigationController?.pushViewController(viewcontroller, animated: true)
                             }
                         }
                     }
-                    // transation to the home screen
-                    //                                self.transitionToHome()
                 }
             }
-            
         }
-        // push
-        
-        
     }
+ 
     
     func showError(_ message:String){
         errorLabel.text = message
         errorLabel.alpha = 1
     }
-
+    
     @IBAction func logInTapped(_ sender: Any) {
         if navigationController?.viewControllers.last is LoginViewController {
             navigationController?.popViewController(animated: true)

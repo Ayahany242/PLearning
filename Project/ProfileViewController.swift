@@ -8,15 +8,60 @@
 
 import UIKit
 import FirebaseDatabase
+import FirebaseAuth
 
 class ProfileViewController: UIViewController {
     @IBOutlet weak var editProfileButton: UIButton!
-    private let database = Database.database().reference()
+    @IBOutlet weak var firstNameTextField: UITextField!
+    @IBOutlet weak var lastNameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    private let ref = Database.database().reference()
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.isHidden = false
 
+<<<<<<< HEAD
     }
 
+=======
+      //getData()
+        // Do any additional setup after loading the view.
+    }
+         private func getData(){
+            let user = Auth.auth().currentUser
+            guard let uid = user?.uid else {return}
+        ref.child("users\(uid)").getData(completion:  { error, snapshot in
+          guard error == nil else {
+            print(error!.localizedDescription)
+            return;
+          }
+         let userName = snapshot.value as? String ?? "Unknown";
+           // print(snapshot.value)
+        });
+    }
+//    if Auth.auth().currentUser != nil {
+//      // User is signed in.
+//     let user = Auth.auth().currentUser
+//      if let user = user {
+//        // The user's ID, unique to the Firebase project.
+//        // Do NOT use this value to authenticate with your backend server,
+//        // if you have one. Use getTokenWithCompletion:completion: instead.
+//        let uid = user.uid
+//        let email = user.email
+//        let photoURL = user.photoURL
+//        var multiFactorString = "MultiFactor: "
+//        for info in user.multiFactor.enrolledFactors {
+//          multiFactorString += info.displayName ?? "[DispayName]"
+//          multiFactorString += " "
+//        }
+//        // ...
+//      }
+//    } else {
+//      // No user is signed in.
+//      // ...
+//    }
+>>>>>>> 47934a57ab943e0177be749232118bbfbeca5cf8
     @IBAction func editTapped(_ sender: Any) {
    
     }

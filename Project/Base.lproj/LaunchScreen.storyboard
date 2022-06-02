@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Oxf-Mc-FOv">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoDefault" translatesAutoresizingMaskIntoConstraints="NO" id="Oxf-Mc-FOv">
                                 <rect key="frame" x="83" y="324" width="248" height="248"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="248" id="JWX-GR-0kv"/>
@@ -39,6 +39,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="AppIcon" width="1045" height="1018"/>
+        <image name="LogoDefault" width="1045" height="1018"/>
     </resources>
 </document>
