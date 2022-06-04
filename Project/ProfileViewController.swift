@@ -21,25 +21,25 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = false
 
-<<<<<<< HEAD
-    }
 
-=======
-      //getData()
-        // Do any additional setup after loading the view.
     }
-         private func getData(){
-            let user = Auth.auth().currentUser
-            guard let uid = user?.uid else {return}
-        ref.child("users\(uid)").getData(completion:  { error, snapshot in
-          guard error == nil else {
-            print(error!.localizedDescription)
-            return;
-          }
-         let userName = snapshot.value as? String ?? "Unknown";
-           // print(snapshot.value)
-        });
-    }
+//
+//=======
+//      //getData()
+//        // Do any additional setup after loading the view.
+//    }
+//         private func getData(){
+//            let user = Auth.auth().currentUser
+//            guard let uid = user?.uid else {return}
+//        ref.child("users\(uid)").getData(completion:  { error, snapshot in
+//          guard error == nil else {
+//            print(error!.localizedDescription)
+//            return;
+//          }
+//         let userName = snapshot.value as? String ?? "Unknown";
+//           // print(snapshot.value)
+//        });
+//    }
 //    if Auth.auth().currentUser != nil {
 //      // User is signed in.
 //     let user = Auth.auth().currentUser
@@ -61,8 +61,9 @@ class ProfileViewController: UIViewController {
 //      // No user is signed in.
 //      // ...
 //    }
->>>>>>> 47934a57ab943e0177be749232118bbfbeca5cf8
+//>>>>>>> 47934a57ab943e0177be749232118bbfbeca5cf8
     @IBAction func editTapped(_ sender: Any) {
-   
+   print(" ")
     }
 }
+

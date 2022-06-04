@@ -11,11 +11,17 @@
 		03084BF42830FF4D00AC6EC8 /* ListNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03084BF12830FF4D00AC6EC8 /* ListNotesViewController.swift */; };
 		03084BF52830FF4D00AC6EC8 /* ListNoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03084BF22830FF4D00AC6EC8 /* ListNoteTableViewCell.swift */; };
 		03084BFA2830FFCA00AC6EC8 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03084BF82830FFC400AC6EC8 /* Date+Extension.swift */; };
-		03084BFB2830FFCA00AC6EC8 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03084BF92830FFCA00AC6EC8 /* Note.swift */; };
 		03084BFE2831003400AC6EC8 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03084BFD2831003400AC6EC8 /* StartViewController.swift */; };
 		030F888D27DEBB17004A0BE5 /* example.json in Resources */ = {isa = PBXBuildFile; fileRef = 030F888C27DEBB17004A0BE5 /* example.json */; };
 		03603FFF28300D14006DE387 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03603FFD28300D13006DE387 /* Constants.swift */; };
 		0360400028300D14006DE387 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03603FFE28300D13006DE387 /* Utilities.swift */; };
+		03A33CE3284A8E7E008DC891 /* NotesCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03A33CE1284A8E7E008DC891 /* NotesCoreData.xcdatamodeld */; };
+		03A33CEA284A9051008DC891 /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A33CE8284A9049008DC891 /* Note+CoreDataProperties.swift */; };
+		03A33CEB284A9051008DC891 /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A33CE9284A9051008DC891 /* Note+CoreDataClass.swift */; };
+		03A33CED284A9264008DC891 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A33CEC284A9264008DC891 /* CoreDataManager.swift */; };
+		03A33CF0284AD8B5008DC891 /* logoGif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 03A33CEF284AD8B0008DC891 /* logoGif.gif */; };
+		03A33CF2284AD9B2008DC891 /* LanchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A33CF1284AD9B2008DC891 /* LanchScreenViewController.swift */; };
+		03A33CF4284ADA13008DC891 /* GifLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A33CF3284ADA13008DC891 /* GifLoader.swift */; };
 		446184B82846A2E700BAF2CC /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446184B72846A2E700BAF2CC /* CustomView.swift */; };
 		44B3409828384CC700E57958 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3409728384CC700E57958 /* Language.swift */; };
 		44B3409D28385F2500E57958 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B3409C28385F2500E57958 /* UIImageView+Extension.swift */; };
@@ -59,11 +65,17 @@
 		03084BF12830FF4D00AC6EC8 /* ListNotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListNotesViewController.swift; sourceTree = "<group>"; };
 		03084BF22830FF4D00AC6EC8 /* ListNoteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListNoteTableViewCell.swift; sourceTree = "<group>"; };
 		03084BF82830FFC400AC6EC8 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
-		03084BF92830FFCA00AC6EC8 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		03084BFD2831003400AC6EC8 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		030F888C27DEBB17004A0BE5 /* example.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = example.json; sourceTree = "<group>"; };
 		03603FFD28300D13006DE387 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		03603FFE28300D13006DE387 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		03A33CE2284A8E7E008DC891 /* NotesCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NotesCoreData.xcdatamodel; sourceTree = "<group>"; };
+		03A33CE8284A9049008DC891 /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		03A33CE9284A9051008DC891 /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift"; sourceTree = "<group>"; };
+		03A33CEC284A9264008DC891 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		03A33CEF284AD8B0008DC891 /* logoGif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logoGif.gif; sourceTree = "<group>"; };
+		03A33CF1284AD9B2008DC891 /* LanchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanchScreenViewController.swift; sourceTree = "<group>"; };
+		03A33CF3284ADA13008DC891 /* GifLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifLoader.swift; sourceTree = "<group>"; };
 		047E97D732E1ACE32E52D75E /* Pods-ProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectTests.release.xcconfig"; path = "Target Support Files/Pods-ProjectTests/Pods-ProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		0A6591A12917A349C2A2112B /* Pods-Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project.release.xcconfig"; path = "Target Support Files/Pods-Project/Pods-Project.release.xcconfig"; sourceTree = "<group>"; };
 		446184B72846A2E700BAF2CC /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
@@ -156,7 +168,10 @@
 		03084BF62830FF5B00AC6EC8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				03084BF92830FFCA00AC6EC8 /* Note.swift */,
+				03A33CE1284A8E7E008DC891 /* NotesCoreData.xcdatamodeld */,
+				03A33CE9284A9051008DC891 /* Note+CoreDataClass.swift */,
+				03A33CE8284A9049008DC891 /* Note+CoreDataProperties.swift */,
+				03A33CEC284A9264008DC891 /* CoreDataManager.swift */,
 			);
 			name = Models;
 			path = "New Group";
@@ -179,6 +194,16 @@
 				B73B41A527B16DE90024D57B /* LoginViewController.swift */,
 			);
 			name = StartViewController;
+			sourceTree = "<group>";
+		};
+		03A33CEE284AD85A008DC891 /* LanchScreenLogo */ = {
+			isa = PBXGroup;
+			children = (
+				03A33CEF284AD8B0008DC891 /* logoGif.gif */,
+				03A33CF1284AD9B2008DC891 /* LanchScreenViewController.swift */,
+				03A33CF3284ADA13008DC891 /* GifLoader.swift */,
+			);
+			name = LanchScreenLogo;
 			sourceTree = "<group>";
 		};
 		1C703319345B0542A616EC5D /* Frameworks */ = {
@@ -274,6 +299,7 @@
 		B735DAF3272F2AD600D3C4F4 /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				03A33CEE284AD85A008DC891 /* LanchScreenLogo */,
 				44BA16F42847DF2100404135 /* Project-Bridging-Header.h */,
 				44B3409E283861B300E57958 /* Helpers */,
 				44B3409B28385F1700E57958 /* Extensions */,
@@ -418,6 +444,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03A33CF0284AD8B5008DC891 /* logoGif.gif in Resources */,
 				B735DB01272F2AD800D3C4F4 /* LaunchScreen.storyboard in Resources */,
 				B7CB32BC27C6ABC300E81065 /* CustomTableViewCell.xib in Resources */,
 				44BA16ED2846AE4700404135 /* Cairo-Regular.ttf in Resources */,
@@ -482,10 +509,11 @@
 			files = (
 				44BA16F32846BB1C00404135 /* TabBarViewController.swift in Sources */,
 				03084BF32830FF4D00AC6EC8 /* EditNoteViewController.swift in Sources */,
+				03A33CE3284A8E7E008DC891 /* NotesCoreData.xcdatamodeld in Sources */,
 				03084BFA2830FFCA00AC6EC8 /* Date+Extension.swift in Sources */,
 				44B3409D28385F2500E57958 /* UIImageView+Extension.swift in Sources */,
-				03084BFB2830FFCA00AC6EC8 /* Note.swift in Sources */,
 				B7CB32BB27C6ABC300E81065 /* CustomTableViewCell.swift in Sources */,
+				03A33CF4284ADA13008DC891 /* GifLoader.swift in Sources */,
 				03603FFF28300D14006DE387 /* Constants.swift in Sources */,
 				B735DAF9272F2AD600D3C4F4 /* ViewController.swift in Sources */,
 				B735DAF5272F2AD600D3C4F4 /* AppDelegate.swift in Sources */,
@@ -493,6 +521,7 @@
 				B7AE1DC028118C4100C6B3A0 /* VedioViewController.swift in Sources */,
 				446184B82846A2E700BAF2CC /* CustomView.swift in Sources */,
 				B7453FF9284923D3002C550C /* AboutUsViewController.swift in Sources */,
+				03A33CF2284AD9B2008DC891 /* LanchScreenViewController.swift in Sources */,
 				B73B41A627B16DE90024D57B /* LoginViewController.swift in Sources */,
 				B7D4EB28282D87DD00648852 /* LanguagesViewController.swift in Sources */,
 				B735DAF7272F2AD600D3C4F4 /* SceneDelegate.swift in Sources */,
@@ -506,12 +535,15 @@
 				03084BFE2831003400AC6EC8 /* StartViewController.swift in Sources */,
 				B73DBFC1284575F000E8C637 /* SettingViewController.swift in Sources */,
 				B73B41A827B16E060024D57B /* HomeViewController.swift in Sources */,
+				03A33CED284A9264008DC891 /* CoreDataManager.swift in Sources */,
 				03084BF42830FF4D00AC6EC8 /* ListNotesViewController.swift in Sources */,
 				B745D72627DBF9CA002CF112 /* VideosViewController.swift in Sources */,
 				44B3409828384CC700E57958 /* Language.swift in Sources */,
+				03A33CEA284A9051008DC891 /* Note+CoreDataProperties.swift in Sources */,
 				0360400028300D14006DE387 /* Utilities.swift in Sources */,
 				B749F0BC2834414900780C68 /* ProfileViewController.swift in Sources */,
 				B7804F782828296600B961D6 /* ExampleViewController.swift in Sources */,
+				03A33CEB284A9051008DC891 /* Note+CoreDataClass.swift in Sources */,
 				03084BF52830FF4D00AC6EC8 /* ListNoteTableViewCell.swift in Sources */,
 				44BA16F62847E44900404135 /* DarkModeConfiguration.swift in Sources */,
 			);
@@ -718,6 +750,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		03A33CE1284A8E7E008DC891 /* NotesCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				03A33CE2284A8E7E008DC891 /* NotesCoreData.xcdatamodel */,
+			);
+			currentVersion = 03A33CE2284A8E7E008DC891 /* NotesCoreData.xcdatamodel */;
+			path = NotesCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B735DAE9272F2AD500D3C4F4 /* Project object */;
 }

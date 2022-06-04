@@ -14,22 +14,7 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoDefault" translatesAutoresizingMaskIntoConstraints="NO" id="Oxf-Mc-FOv">
-                                <rect key="frame" x="83" y="324" width="248" height="248"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="248" id="JWX-GR-0kv"/>
-                                    <constraint firstAttribute="width" constant="248" id="imK-4c-XAI"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="Oxf-Mc-FOv" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="2WP-aI-YNH"/>
-                            <constraint firstItem="Oxf-Mc-FOv" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="DhP-vu-lNC"/>
-                            <constraint firstItem="Oxf-Mc-FOv" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="aU0-Ps-zQH"/>
-                            <constraint firstItem="Oxf-Mc-FOv" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="dnj-uU-TZd"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -38,7 +23,4 @@
             <point key="canvasLocation" x="-96" y="94"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="LogoDefault" width="1045" height="1018"/>
-    </resources>
 </document>
